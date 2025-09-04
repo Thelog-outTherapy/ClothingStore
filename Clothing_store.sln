@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.DAL", "Models.DAL\Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{243F7FC3-6595-483C-AEF1-FC51B7FA6E05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.DAL.Enums", "Models.DAL.Enums\Models.DAL.Enums.csproj", "{F4013E8D-38C3-4EA8-BE07-38E966D969B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{243F7FC3-6595-483C-AEF1-FC51B7FA6E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{243F7FC3-6595-483C-AEF1-FC51B7FA6E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{243F7FC3-6595-483C-AEF1-FC51B7FA6E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4013E8D-38C3-4EA8-BE07-38E966D969B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4013E8D-38C3-4EA8-BE07-38E966D969B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4013E8D-38C3-4EA8-BE07-38E966D969B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4013E8D-38C3-4EA8-BE07-38E966D969B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

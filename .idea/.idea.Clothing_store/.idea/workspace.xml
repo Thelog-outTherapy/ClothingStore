@@ -9,85 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="Добавлен файл .gitignore">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Counter.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Error.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Home.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Weather.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Routes.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Enums/AccessLevel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Enums/Categories.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Enums/Colors.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Enums/OrderStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Enums/ProductTypes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Enums/Sex.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/ClothingStore.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/Database.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL/Models.DAL.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL/Models/Basket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL/Models/Feedback.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL/Models/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DataBase.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DataBase.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models.DAL/Models.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models.DAL.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +21,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TheCrazyWolf"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Thelog-outTherapy/ClothingStore",
+    "accountId": "dcbc2569-fa6f-47bb-a3b1-386b8206faad"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -149,7 +85,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -165,12 +100,12 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="" />
@@ -182,6 +117,7 @@
       <workItem from="1756937454969" duration="1447000" />
       <workItem from="1756938936072" duration="7818000" />
       <workItem from="1756976846417" duration="2297000" />
+      <workItem from="1756980934926" duration="482000" />
     </task>
     <servers />
   </component>
@@ -192,23 +128,5 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
