@@ -8,6 +8,8 @@
 
     <ItemGroup>
       <Folder Include="Services\" />
+      <Folder Include="wwwroot\images\homepage\" />
+      <Folder Include="wwwroot\images\icons\" />
     </ItemGroup>
 
     <ItemGroup>

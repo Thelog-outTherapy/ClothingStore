@@ -9,13 +9,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_06.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Admin.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +189,7 @@
       <workItem from="1756938936072" duration="7818000" />
       <workItem from="1756976846417" duration="2297000" />
       <workItem from="1756980934926" duration="482000" />
-      <workItem from="1757168020040" duration="3378000" />
+      <workItem from="1757168020040" duration="14372000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы страницы">
       <option name="closed" value="true" />
@@ -137,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757168948386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавлены страницы админ-панели">
+      <option name="closed" value="true" />
+      <created>1757171447093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757171447094</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +219,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Созданы страницы, нужно внести в navmenu" />
     <MESSAGE value="Созданы страницы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Созданы страницы" />
+    <MESSAGE value="Добавлены страницы админ-панели" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены страницы админ-панели" />
   </component>
 </project>

@@ -1,6 +1,40 @@
 @page "/AdminProducts"
+@using DataBase
+@using Microsoft.AspNetCore.Mvc
 <h3>AdminProducts</h3>
+@inject ApplicationDbContext Ef
 
 @code {
+
+    private Models.DAL.Product _product = new();
+    
+    private void AddProduct(EditContext args)
+    {
+        Ef.Products.Add(_product);
+        Ef.SaveChanges();
+        _product = new Models.DAL.Product();
+    }
+    private void DeleteProduct(int id)
+    {
+        Models.DAL.Product? removableProduct = Ef.Products.FirstOrDefault(x => x.ProductId == id);
+        if (removableProduct != null)
+        {
+            Ef.Products.Remove(removableProduct);
+            Ef.SaveChanges();
+        }
+    }
+    
+    private void GetEditableProduct(int id)
+    {
+        _product = Ef.Products.FirstOrDefault(y => y.ProductId == id);
+    }
+
+    private void EditProduct()
+    {
+        Ef.Update(_product);
+        Ef.SaveChanges();
+        _product = new Models.DAL.Product();
+    }
+    
     
 }
