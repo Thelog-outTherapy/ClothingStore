@@ -8,12 +8,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="Добавлен файл .gitignore">
+    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="Созданы страницы, нужно внести в navmenu">
+      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Admin.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL.Enums/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Error.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Weather.razor" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +36,21 @@
     &quot;assignee&quot;: &quot;TheCrazyWolf&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Thelog-outTherapy/ClothingStore&quot;,
-    &quot;accountId&quot;: &quot;dcbc2569-fa6f-47bb-a3b1-386b8206faad&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Thelog-outTherapy/ClothingStore.git",
+    "accountId": "3c4f93d2-2f81-4669-9808-957ce92de1a5"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/AccessLevel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/Categories.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/Colors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/OrderStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/ProductTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/Sex.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Admin.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Busket.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DataBase/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Basket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
@@ -122,6 +129,7 @@
       <workItem from="1756938936072" duration="7818000" />
       <workItem from="1756976846417" duration="2297000" />
       <workItem from="1756980934926" duration="482000" />
+      <workItem from="1757168020040" duration="907000" />
     </task>
     <servers />
   </component>
@@ -132,5 +140,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Созданы страницы, нужно внести в navmenu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Созданы страницы, нужно внести в navmenu" />
   </component>
 </project>
