@@ -21,6 +21,7 @@
         {
             Ef.Products.Remove(removableProduct);
             Ef.SaveChanges();
+            StateHasChanged();
         }
     }
     
@@ -35,6 +36,4 @@
         Ef.SaveChanges();
         _product = new Models.DAL.Product();
     }
-    
-    
 }

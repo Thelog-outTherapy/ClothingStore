@@ -9,80 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/bags/Bag_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/belts/Belt_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/caps/Cap_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/coats/Coat_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/dresses/Dress_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jackets/Jacket_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/jeans/Jeans_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/shirts/Shirt_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tops/Top_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/trousers/Trousers_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/images/products/tshirts/Tshirt_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,12 +32,12 @@
     &quot;assignee&quot;: &quot;TheCrazyWolf&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Thelog-outTherapy/ClothingStore.git",
-    "accountId": "3c4f93d2-2f81-4669-9808-957ce92de1a5"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Thelog-outTherapy/ClothingStore.git&quot;,
+    &quot;accountId&quot;: &quot;3c4f93d2-2f81-4669-9808-957ce92de1a5&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,21 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Clothing_store: http.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Clothing_store: http">
     <configuration name="Clothing_store: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" />
@@ -189,7 +129,9 @@
       <workItem from="1756938936072" duration="7818000" />
       <workItem from="1756976846417" duration="2297000" />
       <workItem from="1756980934926" duration="482000" />
-      <workItem from="1757168020040" duration="14372000" />
+      <workItem from="1757168020040" duration="14453000" />
+      <workItem from="1757239035967" duration="3053000" />
+      <workItem from="1757316077647" duration="10956000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы страницы">
       <option name="closed" value="true" />
@@ -207,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757171447094</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлены изображения товаров и методы для работы с данными.">
+      <option name="closed" value="true" />
+      <created>1757202646001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757202646001</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +170,7 @@
     <MESSAGE value="Созданы страницы, нужно внести в navmenu" />
     <MESSAGE value="Созданы страницы" />
     <MESSAGE value="Добавлены страницы админ-панели" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены страницы админ-панели" />
+    <MESSAGE value="Добавлены изображения товаров и методы для работы с данными." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены изображения товаров и методы для работы с данными." />
   </component>
 </project>
