@@ -18,4 +18,9 @@
       <ProjectReference Include="..\DataBase\DataBase.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\lib\Img\Pencil.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\Img\Trashcan.png" />
+    </ItemGroup>
+
 </Project>

@@ -96,3 +96,10 @@ main {
         right: 0.75rem;
         top: 0.5rem;
     }
+    
+    .heading{
+        width: 126px;
+        height: 36px;
+        top: 143px;
+        left: 368px;
+    }

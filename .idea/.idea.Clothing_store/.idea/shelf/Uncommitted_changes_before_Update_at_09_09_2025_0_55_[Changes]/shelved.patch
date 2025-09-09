@@ -1,0 +1,346 @@
+Index: Clothing_store/Components/Pages/AdminProducts.razor
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@page \"/AdminProducts\"\r\n<h3>AdminProducts</h3>\r\n\r\n@code {\r\n    \r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Clothing_store/Components/Pages/AdminProducts.razor b/Clothing_store/Components/Pages/AdminProducts.razor
+--- a/Clothing_store/Components/Pages/AdminProducts.razor	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
++++ b/Clothing_store/Components/Pages/AdminProducts.razor	(date 1757364779758)
+@@ -1,4 +1,7 @@
+ @page "/AdminProducts"
++@using System.Collections.ObjectModel
++@using Clothing_store.Enums
++
+ <h3>AdminProducts</h3>
+ 
+ @code {
+Index: Clothing_store/Components/Layout/NavMenu.razor.css
+===================================================================
+diff --git a/Clothing_store/Components/Layout/NavMenu.razor.css b/Clothing_store/Components/Layout/NavMenu.razor.css
+deleted file mode 100644
+--- a/Clothing_store/Components/Layout/NavMenu.razor.css	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
++++ /dev/null	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
+@@ -1,105 +0,0 @@
+-.navbar-toggler {
+-    appearance: none;
+-    cursor: pointer;
+-    width: 3.5rem;
+-    height: 2.5rem;
+-    color: white;
+-    position: absolute;
+-    top: 0.5rem;
+-    right: 1rem;
+-    border: 1px solid rgba(255, 255, 255, 0.1);
+-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
+-}
+-
+-.navbar-toggler:checked {
+-    background-color: rgba(255, 255, 255, 0.5);
+-}
+-
+-.top-row {
+-    min-height: 3.5rem;
+-    background-color: rgba(0,0,0,0.4);
+-}
+-
+-.navbar-brand {
+-    font-size: 1.1rem;
+-}
+-
+-.bi {
+-    display: inline-block;
+-    position: relative;
+-    width: 1.25rem;
+-    height: 1.25rem;
+-    margin-right: 0.75rem;
+-    top: -1px;
+-    background-size: cover;
+-}
+-
+-.bi-house-door-fill-nav-menu {
+-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+-}
+-
+-.bi-plus-square-fill-nav-menu {
+-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+-}
+-
+-.bi-list-nested-nav-menu {
+-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+-}
+-
+-.nav-item {
+-    font-size: 0.9rem;
+-    padding-bottom: 0.5rem;
+-}
+-
+-    .nav-item:first-of-type {
+-        padding-top: 1rem;
+-    }
+-
+-    .nav-item:last-of-type {
+-        padding-bottom: 1rem;
+-    }
+-
+-    .nav-item ::deep .nav-link {
+-        color: #d7d7d7;
+-        background: none;
+-        border: none;
+-        border-radius: 4px;
+-        height: 3rem;
+-        display: flex;
+-        align-items: center;
+-        line-height: 3rem;
+-        width: 100%;
+-    }
+-
+-.nav-item ::deep a.active {
+-    background-color: rgba(255,255,255,0.37);
+-    color: white;
+-}
+-
+-.nav-item ::deep .nav-link:hover {
+-    background-color: rgba(255,255,255,0.1);
+-    color: white;
+-}
+-
+-.nav-scrollable {
+-    display: none;
+-}
+-
+-.navbar-toggler:checked ~ .nav-scrollable {
+-    display: block;
+-}
+-
+-@media (min-width: 641px) {
+-    .navbar-toggler {
+-        display: none;
+-    }
+-
+-    .nav-scrollable {
+-        /* Never collapse the sidebar for wide screens */
+-        display: block;
+-
+-        /* Allow sidebar to scroll for tall menus */
+-        height: calc(100vh - 3.5rem);
+-        overflow-y: auto;
+-    }
+-}
+Index: Clothing_store/Components/Layout/NavMenu.razor
+===================================================================
+diff --git a/Clothing_store/Components/Layout/NavMenu.razor b/Clothing_store/Components/Layout/NavMenu.razor
+deleted file mode 100644
+--- a/Clothing_store/Components/Layout/NavMenu.razor	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
++++ /dev/null	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
+@@ -1,71 +0,0 @@
+-<div class="top-row ps-3 navbar navbar-dark">
+-    <div class="container-fluid">
+-        <a class="navbar-brand" href="">Clothing_store</a>
+-    </div>
+-</div>
+-
+-<input type="checkbox" title="Navigation menu" class="navbar-toggler"/>
+-
+-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+-    <nav class="nav flex-column">
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+-            </NavLink>
+-        </div>
+-
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="adminFeedbacks">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> AdminFeedbacks
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="adminOrders">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> AdminOrders
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="adminUsers">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> AdminUsers
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="adminProducts">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> AdminProducts
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="basket">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Basket
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="catalog">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Catalog
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="information">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Information
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="privateAccess">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> PrivateAccess
+-            </NavLink>
+-        </div>
+-        
+-        <div class="nav-item px-3">
+-            <NavLink class="nav-link" href="product">
+-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Product
+-            </NavLink>
+-        </div>
+-    </nav>
+-</div>
+\ No newline at end of file
+Index: .idea/.idea.Clothing_store/.idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"RD-252.23892.537\">\r\n    <data-source name=\"ClothingStore\" uuid=\"8e728f0f-d6b6-4962-9d12-89e57f60971a\">\r\n      <database-info product=\"\" version=\"\" jdbc-version=\"\" driver-name=\"\" driver-version=\"\" dbms=\"SQLITE\">\r\n        <identifier-quote-string>&quot;</identifier-quote-string>\r\n      </database-info>\r\n      <case-sensitivity plain-identifiers=\"mixed\" quoted-identifiers=\"mixed\" />\r\n      <auth-provider>no-auth</auth-provider>\r\n      <schema-mapping />\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Clothing_store/.idea/dataSources.local.xml b/.idea/.idea.Clothing_store/.idea/dataSources.local.xml
+--- a/.idea/.idea.Clothing_store/.idea/dataSources.local.xml	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
++++ b/.idea/.idea.Clothing_store/.idea/dataSources.local.xml	(date 1757182431233)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="RD-252.23892.537">
++  <component name="dataSourceStorageLocal" created-in="RD-242.20224.431">
+     <data-source name="ClothingStore" uuid="8e728f0f-d6b6-4962-9d12-89e57f60971a">
+       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE">
+         <identifier-quote-string>&quot;</identifier-quote-string>
+Index: .idea/.idea.Clothing_store/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoGeneratedRunConfigurationManager\">\r\n    <projectFile profileName=\"http\">Clothing_store/Clothing_store.csproj</projectFile>\r\n    <projectFile profileName=\"https\">Clothing_store/Clothing_store.csproj</projectFile>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6ff257a6-b0b6-4c4d-a310-73042d8b059a\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Clothing_store/Components/Pages/Admin.razor\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;TheCrazyWolf&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/Thelog-outTherapy/ClothingStore.git\",\r\n    \"accountId\": \"3c4f93d2-2f81-4669-9808-957ce92de1a5\"\r\n  }\r\n}]]></component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/DataBase/ApplicationDbContext.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Basket.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Feedback.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Order.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Product.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/User.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"32C22M5tmNqo5KG9t2g8Qq9vbcO\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\".NET Launch Settings Profile.Clothing_store: http\">\r\n    <configuration name=\"Clothing_store: http\" type=\"LaunchSettings\" factoryName=\".NET Launch Settings Profile\">\r\n      <option name=\"LAUNCH_PROFILE_PROJECT_FILE_PATH\" value=\"$PROJECT_DIR$/Clothing_store/Clothing_store.csproj\" />\r\n      <option name=\"LAUNCH_PROFILE_TFM\" value=\"net9.0\" />\r\n      <option name=\"LAUNCH_PROFILE_NAME\" value=\"http\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <option name=\"USE_MONO\" value=\"0\" />\r\n      <option name=\"RUNTIME_ARGUMENTS\" value=\"\" />\r\n      <option name=\"GENERATE_APPLICATIONHOST_CONFIG\" value=\"1\" />\r\n      <option name=\"SHOW_IIS_EXPRESS_OUTPUT\" value=\"0\" />\r\n      <option name=\"SEND_DEBUG_REQUEST\" value=\"1\" />\r\n      <option name=\"ADDITIONAL_IIS_EXPRESS_ARGUMENTS\" value=\"\" />\r\n      <option name=\"AUTO_ATTACH_CHILDREN\" value=\"0\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Clothing_store: https\" type=\"LaunchSettings\" factoryName=\".NET Launch Settings Profile\">\r\n      <option name=\"LAUNCH_PROFILE_PROJECT_FILE_PATH\" value=\"$PROJECT_DIR$/Clothing_store/Clothing_store.csproj\" />\r\n      <option name=\"LAUNCH_PROFILE_TFM\" value=\"net9.0\" />\r\n      <option name=\"LAUNCH_PROFILE_NAME\" value=\"https\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <option name=\"USE_MONO\" value=\"0\" />\r\n      <option name=\"RUNTIME_ARGUMENTS\" value=\"\" />\r\n      <option name=\"GENERATE_APPLICATIONHOST_CONFIG\" value=\"1\" />\r\n      <option name=\"SHOW_IIS_EXPRESS_OUTPUT\" value=\"0\" />\r\n      <option name=\"SEND_DEBUG_REQUEST\" value=\"1\" />\r\n      <option name=\"ADDITIONAL_IIS_EXPRESS_ARGUMENTS\" value=\"\" />\r\n      <option name=\"AUTO_ATTACH_CHILDREN\" value=\"0\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6ff257a6-b0b6-4c4d-a310-73042d8b059a\" name=\"Changes\" comment=\"\" />\r\n      <created>1756910026559</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1756910026559</updated>\r\n      <workItem from=\"1756910028224\" duration=\"14883000\" />\r\n      <workItem from=\"1756937454969\" duration=\"1447000\" />\r\n      <workItem from=\"1756938936072\" duration=\"7818000\" />\r\n      <workItem from=\"1756976846417\" duration=\"2297000\" />\r\n      <workItem from=\"1756980934926\" duration=\"482000\" />\r\n      <workItem from=\"1757168020040\" duration=\"3378000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Созданы страницы\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757168948386</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757168948386</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"false\" />\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Созданы страницы, нужно внести в navmenu\" />\r\n    <MESSAGE value=\"Созданы страницы\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Созданы страницы\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Clothing_store/.idea/workspace.xml b/.idea/.idea.Clothing_store/.idea/workspace.xml
+--- a/.idea/.idea.Clothing_store/.idea/workspace.xml	(revision 1a9442fd7867eb0bb96cd73b7201ed47f09d83c7)
++++ b/.idea/.idea.Clothing_store/.idea/workspace.xml	(date 1757364887923)
+@@ -8,14 +8,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" afterDir="false" />
++    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="Добавлен файл .gitignore">
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Admin.razor" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor.css" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -31,24 +29,21 @@
+     &quot;assignee&quot;: &quot;TheCrazyWolf&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/Thelog-outTherapy/ClothingStore.git",
+-    "accountId": "3c4f93d2-2f81-4669-9808-957ce92de1a5"
+-  }
+-}]]></component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Thelog-outTherapy/ClothingStore&quot;,
++    &quot;accountId&quot;: &quot;dcbc2569-fa6f-47bb-a3b1-386b8206faad&quot;
++  }
++}</component>
+   <component name="HighlightingSettingsPerFile">
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/AccessLevel.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/Categories.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/Colors.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/OrderStatus.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/ProductTypes.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Clothing_store/Enums/Sex.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/DataBase/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Basket.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
+@@ -67,6 +62,7 @@
+   </component>
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
++    &quot;.NET Launch Settings Profile.Clothing_store: http.executor&quot;: &quot;Run&quot;,
+     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+@@ -92,7 +88,6 @@
+       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+       <option name="SEND_DEBUG_REQUEST" value="1" />
+       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+       <method v="2">
+         <option name="Build" />
+       </method>
+@@ -108,7 +103,6 @@
+       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+       <option name="SEND_DEBUG_REQUEST" value="1" />
+       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+       <method v="2">
+         <option name="Build" />
+       </method>
+@@ -127,17 +121,7 @@
+       <workItem from="1756938936072" duration="7818000" />
+       <workItem from="1756976846417" duration="2297000" />
+       <workItem from="1756980934926" duration="482000" />
+-      <workItem from="1757168020040" duration="3378000" />
+     </task>
+-    <task id="LOCAL-00001" summary="Созданы страницы">
+-      <option name="closed" value="true" />
+-      <created>1757168948386</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1757168948386</updated>
+-    </task>
+-    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -147,8 +131,5 @@
+   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+   <component name="VcsManagerConfiguration">
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+-    <MESSAGE value="Созданы страницы, нужно внести в navmenu" />
+-    <MESSAGE value="Созданы страницы" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Созданы страницы" />
+   </component>
+ </project>
+\ No newline at end of file

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="RD-252.23892.537">
+  <component name="dataSourceStorageLocal" created-in="RD-242.20224.431">
     <data-source name="ClothingStore" uuid="8e728f0f-d6b6-4962-9d12-89e57f60971a">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE">
         <identifier-quote-string>&quot;</identifier-quote-string>

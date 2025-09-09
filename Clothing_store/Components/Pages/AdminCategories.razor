@@ -1,0 +1,69 @@
+@page "/AdminCategories"
+<div class="d-flex">
+
+    <div id="sidebar" class="bg-light slider">
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none">Логин</a></li>
+            <li><a href="http://localhost:5174/adminFeedbacks" class="text-decoration-none">Административная панель</a></li>
+            <li><a href="http://localhost:5174/adminProducts" class="text-decoration-none">Товары</a></li>
+            <li><a href="http://localhost:5174/adminOrders" class="text-decoration-none">Заказы</a></li>
+            <li><a href="http://localhost:5174/adminUsers" class="text-decoration-none">Пользователи</a></li>
+        </ul>
+    </div>
+<div class="Cothing">
+    <div class="heading">
+        <p>Категории</p>
+        <div class="form-gridCategories">
+            <div>
+                <p>Название категории</p>
+                <input style="width: 777px" class="borderText" type="text" />
+            </div>
+            <div class="subcategory-input">
+                <p>Название подкатегории</p>
+                <div class="input-plus">
+                    <input class="borderText" type="text" />
+                    <span class="plus">+</span>
+                </div>
+            </div>
+            <div class="buttonCategories">
+                <button>Добавить</button>
+            </div>
+            <div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Название категории</th>
+                        <th>Название подкатегории</th>
+                        <th>Действие</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Мужчины</td>
+                        <td>Футболки</td>
+                        <td>
+                            <button class="buttonTable"><img src="Img/Pencil.png" /></button>
+                            <button class="buttonTable"><img src="Img/Trashcan.png" /></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableNone"></td>
+                        <td>Рубашки</td>
+                        <td class="tableNone"></td>
+                    </tr>
+                    <tr>
+                        <td class="tableNone"></td>
+                        <td>Джинсы</td>
+                        <td class="tableNone"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+@code {
+    
+}

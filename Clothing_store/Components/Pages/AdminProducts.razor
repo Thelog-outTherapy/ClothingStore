@@ -1,6 +1,118 @@
 @page "/AdminProducts"
-<h3>AdminProducts</h3>
 
+<div class="d-flex">
+    <div id="sidebar" class="bg-light slider">
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none">Логин</a></li>
+            <li><a href="http://localhost:5174/adminFeedbacks" class="text-decoration-none">Административная панель</a></li>
+            <li><a href="http://localhost:5174/adminProducts" class="text-decoration-none">Товары</a></li>
+            <li><a href="http://localhost:5174/adminCategories" class="text-decoration-none">Категории</a></li>
+            <li><a href="http://localhost:5174/adminOrders" class="text-decoration-none">Заказы</a></li>
+            <li><a href="http://localhost:5174/adminUsers" class="text-decoration-none">Пользователи</a></li>
+            <li><a href="#" class="text-decoration-none">Аналитика</a></li>
+        </ul>
+    </div>
+
+    <div class="Cothing">
+        <div class="heading">
+            <p>Товары</p>
+
+            <div class="form-grid">
+                <div>
+                    <p>Изображение</p>
+                    <input type="file" class="borderImg" />
+                </div>
+                <div>
+                    <p>Цвет</p>
+                    <select class="borderList2" id="colorSelect">
+                        <option value="Чёрный">Чёрный</option>
+                        <option value="Красный">Красный</option>
+                        <option value="Жёлтый">Жёлтый</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Категории</p>
+                    <select class="borderList" id="productSelect">
+                        <option value="Мужчины">Мужчины</option>
+                        <option value="Женщины">Женщины</option>
+                        <option value="Дети">Дети</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Материал</p>
+                    <select class="borderList2" id="материалSelect">
+                        <option value="Хлопок">Хлопок</option>
+                        <option value="Шёлк">Шёлк</option>
+                        <option value="хз">хз</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Подкатегории</p>
+                    <select class="borderList" id="subcategoriesSelect">
+                        <option value="Футболки">Футболки</option>
+                        <option value="Куртки">Куртки</option>
+                        <option value="Джинсы">Джинсы</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Размер</p>
+                    <select class="borderList2" id="размерSelect">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Цена</p>
+                    <input class="borderText" type="text" />
+                </div>
+                <div>
+                    <p>Название</p>
+                    <input class="borderText2" type="text" />
+                </div>
+            </div>
+
+            <div class="buttonInfo2">
+                <button>Добавить</button>
+            </div>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Изображение</th>
+                    <th>Название</th>
+                    <th>Категории</th>
+                    <th>Подкатегория</th>
+                    <th>Цена</th>
+                    <th>Цвет</th>
+                    <th>Материал</th>
+                    <th>Размер</th>
+                    <th>ID</th>
+                    <th>Действие</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="buttonTable"><img src="Img/Pencil.png" /></button>
+                        <button class="buttonTable"><img src="Img/Trashcan.png" /></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 @code {
     
 }
