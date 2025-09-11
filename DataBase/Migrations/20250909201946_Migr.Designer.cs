@@ -3,6 +3,7 @@ using System;
 using DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBase.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250909201946_Migr")]
+    partial class Migr
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -22,10 +25,6 @@ namespace DataBase.Migrations
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("ProductSize")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<int>("ProductTable")
                         .HasColumnType("INTEGER");
@@ -133,13 +132,11 @@ namespace DataBase.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Category")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Color")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Color")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -149,9 +146,8 @@ namespace DataBase.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Material")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Material")
+                        .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
@@ -160,11 +156,13 @@ namespace DataBase.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ProductType")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("ProductType")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Sex")
+                    b.Property<int>("Sex")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Size")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

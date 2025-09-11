@@ -1,4 +1,10 @@
 @page "/AdminProducts"
+@using Clothing_store.Enums.FilterParameters
+@using DataBase
+@using Microsoft.EntityFrameworkCore
+@rendermode InteractiveServer
+@inject ApplicationDbContext Ef;
+
 
 <div class="d-flex">
     <div id="sidebar" class="bg-light slider">
@@ -12,107 +18,270 @@
             <li><a href="#" class="text-decoration-none">Аналитика</a></li>
         </ul>
     </div>
+    
+    <EditForm FormName="AddProductForm" Model="@_product" OnValidSubmit="@AddProduct">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <div class="Cothing">
+            <div class="heading">
+                <p>Товары</p>
+                <div class="form-grid">
+                    <div>
+                        <p>Название</p>
+                        <input bind-value="@_product.ProductName" class="borderText2" type="text"/>
+                    </div>
 
-    <div class="Cothing">
-        <div class="heading">
-            <p>Товары</p>
+                    <div>
+                        <p>Описание</p>
+                        <input bind-value="@_product.Description" class="borderText2" type="text"/>
+                    </div>
 
-            <div class="form-grid">
-                <div>
-                    <p>Изображение</p>
-                    <input type="file" class="borderImg" />
+                    <div>
+                        <p>Категория</p>
+                        <select bind-value="@_product.Category" class="borderList" id="productSelect">
+                            <option value="Мужчины">Мужская одежда</option>
+                            <option value="Женщины">Женская одежда</option>
+                            <option value="Аксессуары">Аксессуары</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Тип товара</p>
+                        <select bind-value="@_product.ProductType" class="borderList" id="subcategoriesSelect">
+                            <option value="Футболка">Футболка</option>
+                            <option value="Куртка">Куртка</option>
+                            <option value="Джинсы">Джинсы</option>
+                            <option value="Рубашка">Рубашка</option>
+                            <option value="Платье">Платье</option>
+                            <option value="Топ">Топ</option>
+                            <option value="Пальто">Пальто</option>
+                            <option value="Брюки">Брюки</option>
+                            <option value="Ремень">Ремень</option>
+                            <option value="Сумка">Сумка</option>
+                            <option value="Шапка">Шапка</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Пол</p>
+                        <select bind-value="@_product.Sex" class="borderList" id="sexSelect">
+                            <option value="М">Мужской</option>
+                            <option value="Ж">Женский</option>
+                            <option value="У">Унисекс</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Бренд</p>
+                        <input bind-value="@_product.Brand" class="borderText2" type="text"/>
+                    </div>
+
+                    <div>
+                        <p>Цвет</p>
+                        <select bind-value="@_product.Color" class="borderList2" id="colorSelect">
+                            <option value="Чёрный">Чёрный</option>
+                            <option value="Красный">Красный</option>
+                            <option value="Жёлтый">Жёлтый</option>
+                            <option value="Чёрный">Белый</option>
+                            <option value="Красный">Зеленый</option>
+                            <option value="Жёлтый">Оранжевый</option>
+                            <option value="Чёрный">Серый</option>
+                            <option value="Красный">Розовый</option>
+                            <option value="Жёлтый">Синий</option>
+                            <option value="Чёрный">Феолетовый</option>
+                            <option value="Красный">Коричневый</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Материал</p>
+                        <select bind-value="@_product.Material" class="borderList2" id="materialSelect">
+                            <option value="Хлопок">Хлопок</option>
+                            <option value="Шёлк">Шёлк</option>
+                            <option value="Лен">Лен</option>
+                            <option value="Шерсть">Шерсть</option>
+                            <option value="Н_кожа">Натуральная кожа</option>
+                            <option value="И_кожа">Искусственная кожа</option>
+                            <option value="Модал">Модал</option>
+                            <option value="Вискоза">Вискоза</option>
+                            <option value="Полиэстер">Полиэстер</option>
+                            <option value="Акрил">Акрил</option>
+                            <option value="Нейлон">Нейлон</option>
+                            <option value="Деним">Деним</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Цена</p>
+                        <input bind-value="@_product.Price" class="borderText" type="text"/>
+                    </div>
+
+                    <div>
+                        <p>Cсылка на изображение</p>
+                        <input bind-value="@_product.ImageUrl" type="text" class="borderImg"/>
+                    </div>
+
+                    <div class="buttonInfo2">
+                        <button type="submit">Добавить</button>
+                        <button @onclick="() => EditProduct(_product)">Внести изменения</button>
+                    </div>
+
+
                 </div>
+            
                 <div>
-                    <p>Цвет</p>
-                    <select class="borderList2" id="colorSelect">
-                        <option value="Чёрный">Чёрный</option>
-                        <option value="Красный">Красный</option>
-                        <option value="Жёлтый">Жёлтый</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Категории</p>
-                    <select class="borderList" id="productSelect">
-                        <option value="Мужчины">Мужчины</option>
-                        <option value="Женщины">Женщины</option>
-                        <option value="Дети">Дети</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Материал</p>
-                    <select class="borderList2" id="материалSelect">
-                        <option value="Хлопок">Хлопок</option>
-                        <option value="Шёлк">Шёлк</option>
-                        <option value="хз">хз</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Подкатегории</p>
-                    <select class="borderList" id="subcategoriesSelect">
-                        <option value="Футболки">Футболки</option>
-                        <option value="Куртки">Куртки</option>
-                        <option value="Джинсы">Джинсы</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Размер</p>
-                    <select class="borderList2" id="размерSelect">
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Цена</p>
-                    <input class="borderText" type="text" />
-                </div>
-                <div>
-                    <p>Название</p>
-                    <input class="borderText2" type="text" />
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Категория</th>
+                            <th>Тип товара</th>
+                            <th>Пол</th>
+                            <th>Бренд</th>
+                            <th>Цвет</th>
+                            <th>Материал</th>
+                            <th>Цена</th>
+                            <th>Изображение</th>
+                            <th>Действие</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach(var item in FilteringAndSorting()) 
+                        {
+                            <tr>
+                                <td>@item.ProductId</td>
+                                <td>@item.ProductName</td>
+                                <td>@item.Description</td>
+                                <td>@item.Category</td>
+                                <td>@item.ProductType</td>
+                                <td>@item.Sex</td>
+                                <td>@item.Brand</td>
+                                <td>@item.Color</td>
+                                <td>@item.Material</td>
+                                <td>@item.Price</td>
+                                <td>@item.ImageUrl</td>
+                            
+                        
+                                <td>
+                                    <div class="buttonTable">
+                                        <button @onclick="() => EditClick()">
+                                            <img src="Img/Pencil.png"/>
+                                        </button>
+
+                                        <button @onclick="() => DeleteClick()">
+                                            <img src="Img/Trashcan.png"/>
+                                        </button>
+                                    </div>
+                                
+                                    @if (_isDeleteButtonClicked)
+                                    {
+                                        DeleteProduct(@item.ProductId);
+                                        _isDeleteButtonClicked = false;
+                                    }
+                                
+                                    @if (_isEditButtonClicked)
+                                    {
+                                        GetEditableProduct(@item.ProductId);
+                                        _isEditButtonClicked = false;
+                                    }
+
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
                 </div>
             </div>
-
-            <div class="buttonInfo2">
-                <button>Добавить</button>
-            </div>
         </div>
-        <div>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Изображение</th>
-                    <th>Название</th>
-                    <th>Категории</th>
-                    <th>Подкатегория</th>
-                    <th>Цена</th>
-                    <th>Цвет</th>
-                    <th>Материал</th>
-                    <th>Размер</th>
-                    <th>ID</th>
-                    <th>Действие</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button class="buttonTable"><img src="Img/Pencil.png" /></button>
-                        <button class="buttonTable"><img src="Img/Trashcan.png" /></button>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    </EditForm>
+    
 </div>
 @code {
+
+    private Models.DAL.Product _product = new();
+
+    private string ColorFilter { get; set; }
+    private string MaterialFilter { get; set; }
+    private string BrandFilter { get; set; }
+
+    private ProductsSorting sortingOrder { get; set; }
+
+    private bool _isDeleteButtonClicked;
+    private bool _isEditButtonClicked;
     
+    private void AddProduct()
+    {
+        Ef.Products.Add(_product);
+        Ef.SaveChanges();
+        _product = new Models.DAL.Product();
+    }
+
+    private void DeleteProduct(int id)
+    {
+        var product = Ef.Products.FirstOrDefault(x => x.ProductId == id);
+
+        if (id != null)
+        {
+            Ef.Products.Remove(product);
+            Ef.SaveChanges();
+            StateHasChanged();
+        }
+    }
+
+    private void GetEditableProduct(int id)
+    {
+        _product = Ef.Products.FirstOrDefault(x => x.ProductId == id);
+    }
+
+    private void EditProduct(Models.DAL.Product product)
+    {
+        Ef.Products.Update(product);
+        Ef.SaveChanges();
+    }
+
+    private IQueryable<Models.DAL.Product> FilteringAndSorting()
+    {
+        IQueryable<Models.DAL.Product> products = Ef.Products;
+
+        if (!String.IsNullOrEmpty(ColorFilter))
+            products = products.Where(a => a.Color.ToString() == ColorFilter);
+
+        if (!String.IsNullOrEmpty(MaterialFilter))
+            products = products.Where(b => b.Material.ToString() == MaterialFilter);
+        
+        if (!String.IsNullOrEmpty(BrandFilter))
+            products = products.Where(c => c.Brand == BrandFilter);
+
+        switch (sortingOrder)
+        {
+            case ProductsSorting.IdDesc:
+                products = products.OrderByDescending(d => d.ProductId);
+                break;
+            case ProductsSorting.PriceDesc:
+                products = products.OrderByDescending(e => e.Price);
+                break;
+            case ProductsSorting.PriceAsc:
+                products = products.OrderBy(f => f.Price);
+                break;
+            default:
+                products = products.OrderBy(g => g.ProductId);
+                break;
+        }
+
+        return products;
+    }
+
+    private void EditClick()
+    {
+        _isEditButtonClicked = true;
+    }
+    
+    private void DeleteClick()
+    {
+        _isDeleteButtonClicked = true;
+    }
+    
+
 }

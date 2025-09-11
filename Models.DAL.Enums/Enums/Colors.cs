@@ -12,5 +12,5 @@ public enum Colors
     Purple,
     Pink,
     Brown,
-    Gray,
+    Gray
 }

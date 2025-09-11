@@ -7,6 +7,7 @@ public class Basket
 {
     [Key]public int ProductId { get; set; }
     public int Quantity { get; set; }
+    public string ProductSize { get; set; }
     
     public int ProductTable { get; set; }
     [ForeignKey("ProductTable")]public Product? Product { get; set; }
