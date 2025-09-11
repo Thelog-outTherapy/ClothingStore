@@ -8,24 +8,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL.Enums/Enums/FilterParameters/ProductsSorting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL.Enums/Enums/Material.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/.name" beforeDir="false" />
+    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="Делал всё ночь,должно быть всё ништяк">
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Belt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Belt3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Jacket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/NewCollection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Redt-shirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/T-shirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Women.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/belt2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminCategories.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminCategories.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL.Enums/Enums/Colors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL.Enums/Enums/Colors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL/Models/Basket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models/Basket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +43,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="firstShow" value="false" />
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -43,6 +53,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -50,16 +61,16 @@
     &quot;assignee&quot;: &quot;TheCrazyWolf&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Thelog-outTherapy/ClothingStore.git&quot;,
-    &quot;accountId&quot;: &quot;3c4f93d2-2f81-4669-9808-957ce92de1a5&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Thelog-outTherapy/ClothingStore.git",
+    "accountId": "a1fe9405-a0f9-4d52-8d66-b76284aa1d2a"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327f875fd92c358a2c6b3c48cc81b288070ecb997371cd17419f80a482a617/LayoutComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d65d8dd6af5669905bd6d55baa11d05965d2c35dab0553524c64dd0c775311d/EventDefinition`.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -67,12 +78,9 @@
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DataBase/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models.DAL.Enums/Enums/FilterParameters/ProductsSorting.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models.DAL.Enums/Enums/Material.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Basket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Order.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,23 +96,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Clothing_store: http.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Clothing_store: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Clothing_store: http">
     <configuration name="Clothing_store: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" />
@@ -117,7 +124,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -133,7 +139,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -153,15 +158,7 @@
       <workItem from="1756976846417" duration="2297000" />
       <workItem from="1756980934926" duration="482000" />
       <workItem from="1757168020040" duration="3378000" />
-      <workItem from="1757450109750" duration="9071000" />
-      <workItem from="1757511161782" duration="4797000" />
-      <workItem from="1757518945925" duration="855000" />
-      <workItem from="1757519819891" duration="463000" />
-      <workItem from="1757520292274" duration="1745000" />
-      <workItem from="1757522823263" duration="410000" />
-      <workItem from="1757530856145" duration="2493000" />
-      <workItem from="1757533386317" duration="7791000" />
-      <workItem from="1757581541782" duration="24000" />
+      <workItem from="1757582586973" duration="12305000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы страницы">
       <option name="closed" value="true" />

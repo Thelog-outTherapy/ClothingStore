@@ -1,13 +1,13 @@
 .page {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
 
 main {
     flex: 1;
 }
-
+    
 .sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
@@ -70,9 +70,7 @@ main {
         width: 0;
     }
 
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
+    .top-row, article{
     }
 }
 
@@ -103,3 +101,5 @@ main {
         top: 143px;
         left: 368px;
     }
+    
+    
