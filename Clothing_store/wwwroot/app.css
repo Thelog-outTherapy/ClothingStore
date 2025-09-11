@@ -327,3 +327,8 @@ input[type="file"]::file-selector-button {
     font-size: 14px;
     border-radius:5px;
 }
+.navigation{
+    display: flex;
+    flex-direction: row;
+    padding-right: 750px;
+}

@@ -148,7 +148,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach(var item in FilteringAndSorting()) 
+                        @foreach(var item in Ef.Products) 
                         {
                             <tr>
                                 <td>@item.ProductId</td>
@@ -201,13 +201,7 @@
 @code {
 
     private Models.DAL.Product _product = new();
-
-    private string ColorFilter { get; set; }
-    private string MaterialFilter { get; set; }
-    private string BrandFilter { get; set; }
-
-    private ProductsSorting sortingOrder { get; set; }
-
+    
     private bool _isDeleteButtonClicked;
     private bool _isEditButtonClicked;
     
@@ -240,39 +234,7 @@
         Ef.Products.Update(product);
         Ef.SaveChanges();
     }
-
-    private IQueryable<Models.DAL.Product> FilteringAndSorting()
-    {
-        IQueryable<Models.DAL.Product> products = Ef.Products;
-
-        if (!String.IsNullOrEmpty(ColorFilter))
-            products = products.Where(a => a.Color.ToString() == ColorFilter);
-
-        if (!String.IsNullOrEmpty(MaterialFilter))
-            products = products.Where(b => b.Material.ToString() == MaterialFilter);
-        
-        if (!String.IsNullOrEmpty(BrandFilter))
-            products = products.Where(c => c.Brand == BrandFilter);
-
-        switch (sortingOrder)
-        {
-            case ProductsSorting.IdDesc:
-                products = products.OrderByDescending(d => d.ProductId);
-                break;
-            case ProductsSorting.PriceDesc:
-                products = products.OrderByDescending(e => e.Price);
-                break;
-            case ProductsSorting.PriceAsc:
-                products = products.OrderBy(f => f.Price);
-                break;
-            default:
-                products = products.OrderBy(g => g.ProductId);
-                break;
-        }
-
-        return products;
-    }
-
+    
     private void EditClick()
     {
         _isEditButtonClicked = true;

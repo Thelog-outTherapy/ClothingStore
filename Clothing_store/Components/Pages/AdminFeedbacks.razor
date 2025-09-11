@@ -1,5 +1,8 @@
 @page "/AdminFeedbacks"
-
+@using DataBase
+@using Microsoft.EntityFrameworkCore
+@rendermode InteractiveServer
+@inject ApplicationDbContext Ef
 <div class="d-flex">
     <!-- Sidebar всегда виден -->
     <div id="sidebar" class="bg-light border-end" style="width: 250px; height: 100vh; position: fixed;">
@@ -12,6 +15,23 @@
             <li><a href="http://localhost:5174/adminUsers" class="text-decoration-none">Пользователи</a></li>
         </ul>
     </div>
+    
+    @foreach (var item in Ef.Feedbacks
+                  .Include(feedback => feedback.Product)
+                  .Include(feedback => feedback.User))
+    {
+        @item.FeedbackId
+        @item.UserTable
+        @item.User.Username
+        @item.Rating
+        @item.Comment
+        @item.ProductTable
+        @item.Product.Category
+        @item.Product.ProductType
+        @item.Product.ProductName
+    
+    }
+    
     
     <div style="margin-left: 250px; padding: 1rem; width: 100%;">
         <h1>Добро пожаловать!</h1>

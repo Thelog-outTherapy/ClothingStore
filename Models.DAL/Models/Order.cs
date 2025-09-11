@@ -25,8 +25,8 @@ public class Order
     public string StreetOfDelivery { get; set; }
     public int HouseNumberOfDelivery { get; set; }
     public int? FlatNumberOfDelivery { get; set; }
-    
+
     public OrderStatus OrderStatus { get; set; }
 
-    
+
 }

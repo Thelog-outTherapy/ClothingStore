@@ -1,4 +1,9 @@
 @page "/AdminOrders"
+@using DataBase
+@using Microsoft.EntityFrameworkCore
+@rendermode InteractiveServer
+@inject ApplicationDbContext Ef
+
 <div class="d-flex">
     <div id="sidebar" class="bg-light slider">
         <ul class="list-unstyled">
@@ -14,26 +19,82 @@
    
     <div class="Cothing">
         <div class="heading">
-            <p>Категории</p>
+            <p>Заказы</p>
         </div>
         <div>
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Пользователь</th>
-                    <th>ID товар</th>
-                    <th>Оплата</th>
-                    <th>Сумма</th>
-                    <th>Статус</th>
+                    <th></th>
+                    <th>ID</th>
+                    <th>Дата оформления заказа</th>
+                    <th>Время оформления заказа</th>
+                    <th>Страна</th>
+                    <th>Регион</th>
+                    <th>Населенный пункт</th>
+                    <th>Улица</th>
+                    <th>Дом</th>
+                    <th>Квартира</th>
+                    <th>Статус заказа</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><input class="tableOrders" type="text" placeholder="Логин"/></td>
-                    <td><input class="tableOrders" type="text" placeholder="ID товара"/></td>
-                    <td><input class="tableOrders" type="text" placeholder="Оплата"/></td>
-                    <td><input class="tableOrders" type="text" placeholder="сколько стоит?"/></td>
-                    <td><button class="buttonOrders">Оформлен</button></td>
+                    @foreach (var item in Ef.Orders)
+                    {
+                        <td>@item.OrderId</td>
+                        <td>@item.OrderDate</td>
+                        <td>@item.OrderTime</td>
+                        <td>@item.CountryOfDelivery</td>
+                        <td>@item.RegionOfDelivery</td>
+                        <td>@item.LocalityOfDelivery</td>
+                        <td>@item.StreetOfDelivery</td>
+                        <td>@item.HouseNumberOfDelivery</td>
+                        <td>@item.FlatNumberOfDelivery</td>
+                        <td>@item.OrderStatus</td>
+                    }
+                    
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID товара</th>
+                    <th>Категория</th>
+                    <th>Тип товара</th>
+                    <th>Название</th>
+                    <th>Бренд</th>
+                    <th>Цвет</th>
+                    <th>Материал</th>
+                    <th>ID пользователя</th>
+                    <th>Пользователь</th>
+                    <th>Электронная почта</th>
+                    <th>Номер телефона</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    @foreach (var item in Ef.Orders
+                                  .Include(order => order.Product)
+                                  .Include(order => order.User))
+                    {
+                        <td>@item.ProductTable</td>
+                        <td>@item.Product.Category</td>
+                        <td>@item.Product.ProductType</td>
+                        <td>@item.Product.ProductName</td>
+                        <td>@item.Product.Brand</td>
+                        <td>@item.Product.Color</td>
+                        <td>@item.Product.Material</td>
+                        <td>@item.UserTable</td>
+                        <td>@item.User.Username</td>
+                        <td>@item.User.Email</td>
+                        <td>@item.User.PhoneNumber</td>
+                    }
+                    
                 </tr>
                 </tbody>
             </table>

@@ -1,6 +1,67 @@
 @page "/Catalog"
+@using Clothing_store.Enums
+@using Clothing_store.Enums.FilterParameters
+@using DataBase
+@inject ApplicationDbContext Ef
 <h3>Catalog</h3>
 
+
+@foreach (var item in FilteringAndSorting())
+{
+    @item.ImageUrl
+    @item.ProductName
+    @item.Price
+}
 @code {
     
+    private string ColorFilter { get; set; }
+    private string MaterialFilter { get; set; }
+    private string BrandFilter { get; set; }
+    private decimal? MinimalPriceFilter { get; set; }
+    private decimal? MaximalPriceFilter { get; set; }
+    private string ShowCategory { get; set; }
+    private string ShowType { get; set; }
+
+    private ProductsSorting sortingOrder { get; set; }
+    
+    private IQueryable<Models.DAL.Product> FilteringAndSorting()
+    {
+        IQueryable<Models.DAL.Product> products = Ef.Products;
+
+        if (!String.IsNullOrEmpty(ColorFilter))
+            products = products.Where(a => a.Color.ToString() == ColorFilter);
+
+        if (!String.IsNullOrEmpty(MaterialFilter))
+            products = products.Where(b => b.Material.ToString() == MaterialFilter);
+        
+        if (!String.IsNullOrEmpty(BrandFilter))
+            products = products.Where(c => c.Brand == BrandFilter);
+
+        if (MinimalPriceFilter != null)
+            products.Where(d => d.Price > MinimalPriceFilter);
+        
+        if (MaximalPriceFilter != null)
+            products.Where(h => h.Price < MinimalPriceFilter);
+
+        if (!String.IsNullOrEmpty(ShowType))
+            products = products.Where(i => i.ProductType == ShowType);
+        
+        if (!String.IsNullOrEmpty(ShowCategory))
+            products = products.Where(j => j.Category == ShowCategory);
+
+        switch (sortingOrder)
+        {
+            case ProductsSorting.PriceDesc:
+                products = products.OrderByDescending(e => e.Price);
+                break;
+            case ProductsSorting.PriceAsc:
+                products = products.OrderBy(f => f.Price);
+                break;
+            default:
+                products = products.OrderBy(g => g.ProductId);
+                break;
+        }
+
+        return products;
+    }
 }

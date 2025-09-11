@@ -9,23 +9,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL.Enums/Enums/FilterParameters/ProductsSorting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models.DAL.Enums/Enums/Material.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL.Enums/Enums/Colors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL.Enums/Enums/Colors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL/Models/Basket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models/Basket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models.DAL/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models.DAL/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models.DAL/Models/Order.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +156,7 @@
       <workItem from="1757522823263" duration="410000" />
       <workItem from="1757530856145" duration="2493000" />
       <workItem from="1757533386317" duration="7791000" />
-      <workItem from="1757581541782" duration="24000" />
+      <workItem from="1757581541782" duration="17806000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы страницы">
       <option name="closed" value="true" />
@@ -179,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757390643745</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Отредактирована модель даных, начата работа на внешним видом сайта">
+      <option name="closed" value="true" />
+      <created>1757581710088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757581710088</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +195,7 @@
     <MESSAGE value="Созданы страницы, нужно внести в navmenu" />
     <MESSAGE value="Созданы страницы" />
     <MESSAGE value="Делал всё ночь,должно быть всё ништяк" />
-    <option name="LAST_COMMIT_MESSAGE" value="Делал всё ночь,должно быть всё ништяк" />
+    <MESSAGE value="Отредактирована модель даных, начата работа на внешним видом сайта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отредактирована модель даных, начата работа на внешним видом сайта" />
   </component>
 </project>
