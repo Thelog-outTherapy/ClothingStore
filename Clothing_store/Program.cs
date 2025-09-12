@@ -1,10 +1,12 @@
 using Clothing_store.Components;
+using Clothing_store.Services;
 using DataBase;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>();
+builder.Services.AddSingleton<LogInService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

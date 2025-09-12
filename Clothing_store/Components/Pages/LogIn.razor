@@ -1,0 +1,24 @@
+@page "/LogIn"
+@using Clothing_store.Services
+@using DataBase
+@rendermode InteractiveServer
+@inject LogInService LogInService
+@inject ApplicationDbContext Ef
+
+<h3>LogIn</h3>
+
+@code {
+
+    private void Login()
+    {
+        var user = Ef.Users.FirstOrDefault(x => x.Email == LogInService.Login && x.Password == LogInService.Password);
+
+        if (user != null)
+        {
+            LogInService.User = user;
+        }
+        
+        
+    }
+    
+}
