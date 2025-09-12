@@ -9,18 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/LogIn.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Registration.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Services/LogInService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminCategories.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +163,7 @@
       <workItem from="1757530856145" duration="2493000" />
       <workItem from="1757533386317" duration="7791000" />
       <workItem from="1757581541782" duration="18430000" />
-      <workItem from="1757625609309" duration="10188000" />
+      <workItem from="1757625609309" duration="15540000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы страницы">
       <option name="closed" value="true" />
@@ -214,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757625451709</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлены страницы входа и регистрации">
+      <option name="closed" value="true" />
+      <created>1757640377131</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757640377131</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +239,7 @@
     <MESSAGE value="Делал всё ночь,должно быть всё ништяк" />
     <MESSAGE value="Отредактирована модель даных, начата работа на внешним видом сайта" />
     <MESSAGE value="Добавлен функционал админ-панели" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен функционал админ-панели" />
+    <MESSAGE value="Добавлены страницы входа и регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены страницы входа и регистрации" />
   </component>
 </project>

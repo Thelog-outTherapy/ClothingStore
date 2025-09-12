@@ -411,3 +411,38 @@ input[type="file"]::file-selector-button {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-center {
+    display: flex;
+    gap: 60px;
+    margin: 0 auto;
+}
+
+header nav a {
+    text-decoration: none ;
+    color: black ;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #555 ;
+}
+
+.auth-links {
+    display: flex;
+    gap: 20px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
