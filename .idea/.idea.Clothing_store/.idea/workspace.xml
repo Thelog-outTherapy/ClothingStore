@@ -9,18 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/LogIn.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Registration.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clothing_store/Services/LogInService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Clothing_store.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminCategories.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clothing_store/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +97,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.Clothing_store: http.executor": "Debug",
+    ".NET Launch Settings Profile.Clothing_store: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -127,7 +125,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -143,7 +140,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -173,6 +169,7 @@
       <workItem from="1757533386317" duration="7791000" />
       <workItem from="1757581541782" duration="18430000" />
       <workItem from="1757625609309" duration="10188000" />
+      <workItem from="1757660533906" duration="3082000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы страницы">
       <option name="closed" value="true" />

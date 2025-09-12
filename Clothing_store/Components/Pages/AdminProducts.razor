@@ -6,18 +6,21 @@
 @inject ApplicationDbContext Ef;
 
 
-<div class="d-flex">
-    <div id="sidebar" class="bg-sidebar">
-        <ul class="list-unstyled">
-            <li><a href="#" class="text-decoration-none p-3 d-block">Логин</a></li>
-            <li><a href="http://localhost:5174/adminFeedbacks" class="text-decoration-none p-3 d-block">Административная панель</a></li>
-            <li><a href="http://localhost:5174/adminProducts" class="text-decoration-none p-3 d-block">Товары</a></li>
-            <li><a href="http://localhost:5174/adminCategories" class="text-decoration-none p-3 d-block">Категории</a></li>
-            <li><a href="http://localhost:5174/adminOrders" class="text-decoration-none p-3 d-block">Заказы</a></li>
-            <li><a href="http://localhost:5174/adminUsers" class="text-decoration-none p-3 d-block">Пользователи</a></li>
-            <li><a href="#" class="text-decoration-none p-3 d-block">Аналитика</a></li>
-        </ul>
+<div class="admin-wrapper">
+    <div class="admin-layout">
+        <aside class="sidebarAdmin">
+            <ul class="list-unstyled">
+                <li><a href="#" class="menu-item">Логин</a></li>
+                <li><a href="http://localhost:5174/adminFeedbacks" class="menu-item">Административная панель</a></li>
+                <li><a href="http://localhost:5174/adminProducts" class="menu-item active">Товары</a></li>
+                <li><a href="http://localhost:5174/adminCategories" class="menu-item">Категории</a></li>
+                <li><a href="http://localhost:5174/adminOrders" class="menu-item">Заказы</a></li>
+                <li><a href="http://localhost:5174/adminUsers" class="menu-item">Пользователи</a></li>
+                <li><a href="#" class="menu-item">Аналитика</a></li>
+            </ul>
+        </aside>
     </div>
+
     
     <EditForm FormName="AddProductForm" Model="@_product" OnValidSubmit="@AddProduct">
         <DataAnnotationsValidator></DataAnnotationsValidator>
@@ -195,8 +198,8 @@
                 </div>
             </div>
         </div>
+        
     </EditForm>
-    
 </div>
 @code {
 

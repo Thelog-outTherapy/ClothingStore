@@ -3,19 +3,21 @@
 @using Microsoft.EntityFrameworkCore
 @rendermode InteractiveServer
 @inject ApplicationDbContext Ef
-<div class="d-flex">
-    <!-- Sidebar всегда виден -->
-    <div id="sidebar" class="bg-light border-end" style="width: 250px; height: 100vh; position: fixed;">
-        <ul class="list-unstyled">
-            <li><a href="#" class="text-decoration-none">Логин</a></li>
-            <li><a href="http://localhost:5174/adminFeedbacks" class="text-decoration-none">Административная панель</a></li>
-            <li><a href="http://localhost:5174/adminProducts" class="text-decoration-none">Товары</a></li>
-            <li><a href="http://localhost:5174/adminCategories" class="text-decoration-none">Категории</a></li>
-            <li><a href="http://localhost:5174/adminOrders" class="text-decoration-none">Заказы</a></li>
-            <li><a href="http://localhost:5174/adminUsers" class="text-decoration-none">Пользователи</a></li>
-        </ul>
+<div class="admin-wrapper">
+    <div class="admin-layout">
+        <aside class="sidebarAdmin">
+            <ul class="list-unstyled">
+                <li><a href="#" class="menu-item">Логин</a></li>
+                <li><a href="http://localhost:5174/adminFeedbacks" class="menu-item">Административная панель</a></li>
+                <li><a href="http://localhost:5174/adminProducts" class="menu-item active">Товары</a></li>
+                <li><a href="http://localhost:5174/adminCategories" class="menu-item">Категории</a></li>
+                <li><a href="http://localhost:5174/adminOrders" class="menu-item">Заказы</a></li>
+                <li><a href="http://localhost:5174/adminUsers" class="menu-item">Пользователи</a></li>
+                <li><a href="#" class="menu-item">Аналитика</a></li>
+            </ul>
+        </aside>
     </div>
-    
+
     @foreach (var item in Ef.Feedbacks
                   .Include(feedback => feedback.Product)
                   .Include(feedback => feedback.User))
@@ -33,7 +35,7 @@
     }
     
     
-    <div style="margin-left: 250px; padding: 1rem; width: 100%;">
+    <div>
         <h1>Добро пожаловать!</h1>
         <p>Основной контент страницы с фиксированным слайдбаром слева.</p>
     </div>
