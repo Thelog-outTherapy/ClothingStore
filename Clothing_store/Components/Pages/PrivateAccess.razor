@@ -1,6 +1,42 @@
 @page "/PrivateAccess"
-<h3>PrivateAccess</h3>
 
+<div class="profile-container">
+    <div class="back-btn">
+        <a href="/Account">←</a>
+    </div>
+
+    <h2>Личные данные</h2>
+
+    <form asp-controller="Account" asp-action="SaveProfile" method="post">
+        <div class="form-group">
+            <label>Логин</label>
+            <input type="text" name="Login"  />
+        </div>
+
+        <div class="form-group">
+            <label>Номер телефона</label>
+            <input type="tel" name="Phone"  />
+        </div>
+
+        <div class="form-group">
+            <label>Почта</label>
+            <input type="email" name="Email" />
+        </div>
+
+        <div class="form-group">
+            <label>Баланс</label>
+            <input type="text" name="Balance"/>
+        </div>
+
+        <div class="form-group password-group">
+            <label>Пароль</label>
+            <input type="password" id="passwordField" name="Password" />
+            <span class="toggle-pass" onclick="togglePassword()">👁</span>
+        </div>
+
+        <button type="submit" class="save-btn">Сохранить</button>
+    </form>
+</div>
 @code {
     
 }

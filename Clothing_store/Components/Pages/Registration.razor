@@ -3,7 +3,41 @@
 @using Models.DAL
 @rendermode InteractiveServer
 @inject ApplicationDbContext Ef
-<h3>Registration</h3>
+
+<div class="register-container">
+    <h2>Создайте аккаунт</h2>
+
+    <form asp-action="Register" method="post">
+        <div class="form-group">
+            <input asp-for="Username" placeholder="Логин" />
+            <span asp-validation-for="Username" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <input asp-for="PhoneNumber" placeholder="Номер телефона" />
+            <span asp-validation-for="PhoneNumber" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <input asp-for="Email" placeholder="Почта" />
+            <span asp-validation-for="Email" class="error"></span>
+        </div>
+
+        <div class="form-group password-group">
+            <input asp-for="Password" type="password" placeholder="Пароль" id="registerPassword" />
+            <span class="toggle-password" onclick="togglePassword('registerPassword')">👁</span>
+            <span asp-validation-for="Password" class="error"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Создать</button>
+
+        <p class="policy">
+            Создавая аккаунт, Вы подтверждаете, что ознакомились с
+            <a href="#">Политикой конфиденциальности</a> и принимаете
+            <a href="#">Условия продажи</a>.
+        </p>
+    </form>
+</div>
 
 @code {
     private User _user = new();

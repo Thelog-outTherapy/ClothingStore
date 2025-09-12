@@ -1,5 +1,79 @@
 @page "/Product"
-<h3>Product</h3>
+
+<div class="product-page">
+    <div class="product-main">
+        <!-- Левая часть: фото -->
+        <div class="product-image">
+            <img src="Img/T-shirt.png" alt="Фото товара" />
+        </div>
+
+        <!-- Правая часть: инфо -->
+        <div class="product-info">
+            <h1 class="product-title">Футболка хлопковая</h1>
+            <p class="product-price">799₽</p>
+
+            <!-- Блок с характеристиками -->
+            <div class="product-characteristics">
+                <h3>Характеристики</h3>
+                <ul>
+                    <li>Материал: 100% хлопок</li>
+                    <li>Страна производства: Турция</li>
+                    <li>Сезон: Лето</li>
+                    <li>Цвет: Белый</li>
+                </ul>
+            </div>
+
+            <p class="product-desc">
+                Описание: стильная базовая футболка из 100% хлопка. Отлично сидит и
+                подходит для повседневной носки.
+            </p>
+
+            <div class="sizes">
+                <button class="size-btn active">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+            </div>
+
+            <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="reviews-section">
+        <h2>Отзывы о товаре</h2>
+
+        <div class="reviews-list">
+            <div class="review">
+                <strong>Иван</strong>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>Отличное качество! Рекомендую!</p>
+            </div>
+            <div class="review">
+                <strong>Мария</strong>
+                <div class="stars">⭐⭐⭐⭐</div>
+                <p>Хорошая футболка, но доставка была долгой.</p>
+            </div>
+        </div>
+
+        <!-- Форма отзыва -->
+        <form method="post" asp-action="AddReview" class="review-form">
+            <label for="rating">Ваша оценка:</label>
+            <div id="starRating" class="star-rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+            <input type="hidden" id="ratingInput" name="rating" />
+
+            <label for="comment">Ваш отзыв:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+
+            <button type="submit">Оставить отзыв</button>
+        </form>
+    </div>
+</div>
 
 @code {
     

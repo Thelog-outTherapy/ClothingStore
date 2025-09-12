@@ -5,7 +5,25 @@
 @inject LogInService LogInService
 @inject ApplicationDbContext Ef
 
-<h3>LogIn</h3>
+<div class="log-in-container">
+    <h2>Войдите в аккаунт</h2>
+    <form asp-action="Log-in" method="post">
+        <div class="form-group">
+            <input asp-for="Email" placeholder="Введите логин" />
+            <span asp-validation-for="Email" class="error"></span>
+        </div>
+
+        <div class="form-group password-group">
+            <input asp-for="Password" type="password" placeholder="Введите пароль" id="passwordInput" />
+            <span class="toggle-password" onclick="togglePassword()">👁</span>
+            <span asp-validation-for="Password" class="error"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Войти</button>
+    </form>
+
+</div>
+
 
 @code {
 

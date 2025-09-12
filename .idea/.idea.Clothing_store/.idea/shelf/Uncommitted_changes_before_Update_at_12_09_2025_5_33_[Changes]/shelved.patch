@@ -1,0 +1,1115 @@
+Index: Clothing_store/Components/Pages/PrivateAccess.razor
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@page \"/PrivateAccess\"\r\n<h3>PrivateAccess</h3>\r\n\r\n@code {\r\n    \r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Clothing_store/Components/Pages/PrivateAccess.razor b/Clothing_store/Components/Pages/PrivateAccess.razor
+--- a/Clothing_store/Components/Pages/PrivateAccess.razor	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/Clothing_store/Components/Pages/PrivateAccess.razor	(date 1757640514766)
+@@ -1,6 +1,42 @@
+ @page "/PrivateAccess"
+-<h3>PrivateAccess</h3>
++
++<div class="profile-container">
++    <div class="back-btn">
++        <a href="/Account">←</a>
++    </div>
++
++    <h2>Личные данные</h2>
++
++    <form asp-controller="Account" asp-action="SaveProfile" method="post">
++        <div class="form-group">
++            <label>Логин</label>
++            <input type="text" name="Login"  />
++        </div>
+ 
++        <div class="form-group">
++            <label>Номер телефона</label>
++            <input type="tel" name="Phone"  />
++        </div>
++
++        <div class="form-group">
++            <label>Почта</label>
++            <input type="email" name="Email" />
++        </div>
++
++        <div class="form-group">
++            <label>Баланс</label>
++            <input type="text" name="Balance"/>
++        </div>
++
++        <div class="form-group password-group">
++            <label>Пароль</label>
++            <input type="password" id="passwordField" name="Password" />
++            <span class="toggle-pass" onclick="togglePassword()">👁</span>
++        </div>
++
++        <button type="submit" class="save-btn">Сохранить</button>
++    </form>
++</div>
+ @code {
+     
+ }
+\ No newline at end of file
+Index: Clothing_store/wwwroot/app.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>html, body {\r\n    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n}\r\n\r\na, .btn-link {\r\n    color: #006bb7;\r\n}\r\n\r\n.btn-primary {\r\n    color: #fff;\r\n    background-color: #1b6ec2;\r\n    border-color: #1861ac;\r\n}\r\n\r\n.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {\r\n  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;\r\n}\r\n\r\n.content {\r\n    padding-top: 1.1rem;\r\n}\r\n\r\nh1:focus {\r\n    outline: none;\r\n}\r\n\r\n.valid.modified:not([type=checkbox]) {\r\n    outline: 1px solid #26b050;\r\n}\r\n\r\n.invalid {\r\n    outline: 1px solid #e50000;\r\n}\r\n\r\n.validation-message {\r\n    color: #e50000;\r\n}\r\n\r\n.blazor-error-boundary {\r\n    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;\r\n    padding: 1rem 1rem 1rem 3.7rem;\r\n    color: white;\r\n}\r\n\r\n    .blazor-error-boundary::after {\r\n        content: \"An error has occurred.\"\r\n    }\r\n\r\n.darker-border-checkbox.form-check-input {\r\n    border-color: #929292;\r\n}\r\n\r\n.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {\r\n    color: var(--bs-secondary-color);\r\n    text-align: end;\r\n}\r\n\r\n.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {\r\n    text-align: start;\r\n}\r\n\r\n.d-flex {\r\n    display: flex;\r\n    align-items: flex-start;\r\n    min-height: 100vh;\r\n    gap: 0;\r\n}\r\n\r\n\r\n#sidebar {\r\n    height: 100vh;\r\n    width: 280px;                      \r\n    background: #f6f7f8;                \r\n    border-right: 1px solid #e9e9e9;    \r\n    padding: 40px 35px;                \r\n}\r\n\r\n#sidebar li {\r\n    margin: 14px 0;\r\n}\r\n#sidebar a {\r\n    color: #111;\r\n    font-size: 20px;\r\n    display: inline-block;\r\n    padding: 4px 0;\r\n    line-height: 1.2;\r\n}\r\n#sidebar a:hover {\r\n    color: #000000;\r\n}\r\n#sidebar a.active {                     \r\n    color: #00000000;\r\n    font-weight: 700;\r\n}\r\n\r\n\r\n.Cothing {\r\n    flex: 1;\r\n    padding: 28px 60px;                 \r\n    background: #fff;\r\n}\r\n\r\n\r\n.heading {\r\n    margin: 6px 0 22px 0;\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    color: #111;\r\n}\r\n\r\n\r\n.form-grid {\r\n    display: grid;\r\n    grid-template-columns: 1fr 380px;\r\n    gap: 16px 40px;           \r\n    align-items: start;\r\n    max-width: 980px;\r\n}\r\n\r\n\r\n.form-grid > div {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 6px;\r\n}\r\n\r\n\r\n.form-grid p {\r\n    margin: 0;\r\n    font-size: 13px;\r\n    color: #333;\r\n}\r\n\r\n.form-gridCategories {\r\n    display: grid;\r\n    gap: 20px 40px;\r\n    max-width: 800px;\r\n}\r\n\r\n.borderList2 {\r\n    height: 38px;\r\n    padding: 8px 10px;\r\n    border: 1px solid #d4d4d4;\r\n    background: white;\r\n    font-size: 14px;\r\n    color: #111;\r\n}\r\n\r\n\r\n.borderText{\r\n    height: 38px;\r\n    padding: 8px 10px;\r\n    border: 1px solid #d4d4d4;\r\n    background: white;\r\n    font-size: 14px;\r\n    color: #111;\r\n}\r\n\r\n.borderList{\r\n    height: 38px;\r\n    padding: 8px 10px;\r\n    border: 1px solid #d4d4d4;\r\n    background: white;\r\n    font-size: 14px;\r\n    color: #111;\r\n}\r\n\r\n.borderText2{\r\n    height: 38px;\r\n    padding: 8px 10px;\r\n    border: 1px solid #d4d4d4;\r\n    background: white;\r\n    font-size: 14px;\r\n    color: #111;\r\n}\r\n\r\n.borderImg {\r\n    padding: 6px;\r\n    border: 1px solid #d4d4d4;\r\n    background: white;\r\n    line-height: 1.2;\r\n    width: 337px;\r\n    height: 234px;\r\n    top: 261px;\r\n    left: 410px;\r\n}\r\n\r\ninput[type=\"file\"]::-webkit-file-upload-button {\r\n    padding: 7px 12px;\r\n    margin-right: 8px;\r\n    border: 1px solid #bfbfbf;\r\n    background: #f5f5f5;\r\n    font-size: 13px;\r\n}\r\ninput[type=\"file\"]::file-selector-button {\r\n    padding: 7px 12px;\r\n    margin-right: 8px;\r\n    border: 1px solid #bfbfbf;\r\n    background: #f5f5f5;\r\n    font-size: 13px;\r\n}\r\n\r\n.buttonInfo2 {\r\n    margin-top: 18px;\r\n}\r\n.buttonInfo2 button {\r\n    display: inline-block;\r\n    background: #000000;\r\n    color: white;\r\n    padding: 10px 18px;\r\n    font-weight: 700;\r\n    font-size: 14px;\r\n}\r\n\r\n.table {\r\n    width: 100%;\r\n    border-collapse: collapse;\r\n    margin-top: 28px;\r\n    max-width: 1100px;\r\n}\r\n\r\n.table td {\r\n    border: 1px solid #e6e6e6;\r\n    padding: 12px 10px;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n    font-size: 13px;\r\n}\r\n.table th {\r\n    background: #f4f4f4;\r\n    font-weight: 700;\r\n    color: #111111;\r\n}\r\n\r\n.table td {\r\n    height: 46px;\r\n}\r\n\r\n.buttonTable {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    width: 36px;\r\n    height: 36px;\r\n    border-radius: 6px;\r\n    background: #000000;\r\n    margin: 0 4px;\r\n}\r\n.buttonTable img {\r\n    width: 18px;\r\n    height: 18px;\r\n    display: block;\r\n}\r\n\r\n.buttonInfo2 {\r\n    margin-left: 600px;\r\n    margin-top: 20px;\r\n}\r\n\r\n.buttonInfo2 button {\r\n    width: 380px;\r\n    height: 60px;\r\n    background: #000;\r\n    color: #fff;\r\n    padding: 10px 20px;\r\n    font-size: 27px;\r\n    font-weight: 600;\r\n}\r\n\r\n.buttonCategories button {\r\n    width: 380px;\r\n    height: 60px;\r\n    background: #000;\r\n    color: #fff;\r\n    padding: 10px 20px;\r\n    font-size: 27px;\r\n    font-weight: 600;\r\n}\r\n\r\n.input-plus {\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 10px;\r\n}.input-plus input {\r\n     flex: 1;\r\n }\r\n.input-plus .plus {\r\n    font-size: 22px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n}\r\n.table {\r\n    width: 100%;\r\n    border-collapse: collapse;\r\n    margin-top: 30px;\r\n}\r\n.table th, .table td {\r\n    border: 1px solid #ddd;\r\n    padding: 10px;\r\n    text-align: center;\r\n}\r\n.table th {\r\n    background: #f5f5f5;\r\n    font-weight: bold;\r\n}\r\n.buttonTable {\r\n    background: #000;\r\n    border: none;\r\n    padding: 6px;\r\n    margin: 0 2px;\r\n    cursor: pointer;\r\n}\r\n.buttonTable img {\r\n    width: 16px;\r\n    height: 16px;\r\n}\r\n\r\n\r\n.tableOrders{\r\n    border: 0px;\r\n}\r\n\r\n.buttonOrders{\r\n    display: inline-block;\r\n    background: #000000;\r\n    color: white;\r\n    font-size: 14px;\r\n    border-radius:5px;\r\n}\r\n.navigation{\r\n    display: flex;\r\n    flex-direction: row;\r\n    padding-right: 750px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Clothing_store/wwwroot/app.css b/Clothing_store/wwwroot/app.css
+--- a/Clothing_store/wwwroot/app.css	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/Clothing_store/wwwroot/app.css	(date 1757640627071)
+@@ -331,4 +331,573 @@
+     display: flex;
+     flex-direction: row;
+     padding-right: 750px;
++}
++
++.menuWeb {
++    display: flex;
++    flex-direction: column;
++    justify-content: center;
++    align-items: center;
++    height: 500px;
++    width: 100%;               /* баннер на всю ширину */
++    color: white;
++    text-align: center;
++    background-image: url("Img/NewCollection.png");
++    background-size: cover;
++    background-position: center;
++}
++
++.shadow-def h1 {
++    font-size: 40px;
++    margin-bottom: 20px;
++}
++
++/* Кнопка */
++.button-radius-white {
++    margin: 20px;
++    padding: 12px 30px;
++    background: #fff;
++    border-radius: 31px;
++    font-size: 18px;
++    border: none;
++    cursor: pointer;
++}
++
++/* Категории */
++.asd {
++    display: flex;
++    justify-content: center;
++    align-items: center;
++    margin: auto;
++    max-width: 1200px;
++}
++
++.categories {
++    width: 90%;      
++    margin: 0 auto;      
++}
++
++.row {
++    display: flex;
++    width: 100%;
++}
++
++.background-jaket{
++    display: flex;
++    justify-content: center;
++    align-items: center;
++    flex: 1;                  
++    height: 400px;
++    color: white;
++    font-size: 32px;
++    font-weight: bold;
++    text-transform: uppercase;
++    background-size: cover;
++    background-position: center;
++    background-image: url("Img/Jacket.png");
++}
++.background-women{
++    display: flex;
++    justify-content: center;
++    align-items: center;
++    flex: 1;                  
++    height: 400px;
++    color: white;
++    font-size: 32px;
++    font-weight: bold;
++    text-transform: uppercase;
++    background-size: cover;
++    background-position: center;
++    background-image: url("Img/Women.png");
++}
++.background-belt {
++    display: flex;
++    justify-content: center;
++    align-items: center;
++    width: 100%;               
++    height: 200px;
++    color: white;
++    font-size: 28px;
++    font-weight: bold;
++    text-transform: uppercase;
++    background-image: url("Img/Belt.png");
++    background-size: cover;
++    background-position: center;
++}
++
++/* Популярные товары */
++.products {
++    display: flex;
++    justify-content: center;   /* выравнивание по центру */
++    flex-wrap: wrap;           /* перенос на новую строку */
++    width: 90%;                /* как у категорий */
++    margin: 40px auto;         /* центрируем */
++    gap: 20px;
++}
++
++.item {
++    display: flex;
++    flex-direction: column;
++    width: 364px;              /* фиксированная ширина */
++    height: 403px;             /* фиксированная высота */
++    text-align: center;
++}
++
++.item > div {
++    width: 100%;             /* картинка занимает всю карточку */
++}
++
++.product-info {
++    margin-top: 10px;
++    font-size: 16px;
++}
++
++.label {
++    position: absolute;
++    top: 10px;
++    left: 10px;
++    background-color: #f75b5b;
++    color: #fff;
++    padding: 5px 15px;
++    border-bottom-right-radius: 35px;
++    font-size: 18px;
++}
++
++.price {
++    font-weight: bold;
++    margin-top: 5px;
++}
++
++.background-t-shirt{
++    width: 364px;
++    height: 403px;
++    background-size: cover;
++    background-position: center;
++    border-radius: 8px;
++    position: relative;
++    background-image: url("Img/T-shirt.png");
++}
++
++.background-top{
++    width: 364px;
++    height: 403px;
++    background-size: cover;
++    background-position: center;
++    border-radius: 8px;
++    position: relative;
++    background-image: url("Img/Top.png");
++}
++
++.background-bag{
++    width: 364px;
++    height: 403px;
++    background-size: cover;
++    background-position: center;
++    border-radius: 8px;
++    position: relative;
++    background-image: url("Img/Bag.png");
++}
++
++.background-belt2{
++    width: 364px;
++    height: 403px;
++    background-size: cover;
++    background-position: center;
++    border-radius: 8px;
++    position: relative;
++    background-image: url("Img/Belt2.png");
++}
++.menuText {
++    display: flex;
++    justify-content: center;
++    align-items: center;    
++    height: 100px;       
++    text-align: center;
++}
++.sale-banner {
++    background: black;
++    color: white;
++    text-align: center;
++    font-size: 28px;
++}
++
++.catalog-page {
++    font-family: Arial, sans-serif;
++}
++
++/* Верхнее меню */
++.top-menu {
++    display: flex;
++    justify-content: space-between; /* меню слева, фильтры справа */
++    align-items: center;
++    padding: 15px 20px;
++    border-bottom: 1px solid #ddd;
++}
++
++
++.menu-left a {
++    text-decoration: none;
++    color: black;
++    font-size: 16px;
++    font-weight: 600;
++    margin: 0 10px;
++}
++
++.divider {
++    margin: 0 5px;
++    color: #aaa;
++}
++
++.menu-right {
++    display: flex;
++    align-items: center;
++    gap: 20px;
++}
++
++.top-menu a {
++    text-decoration: none;
++    font-size: 20px;
++    font-weight: 500;
++    color: #444;
++    transition: color 0.3s;
++}
++
++.top-menu a:hover {
++    color: #f75b5b;
++}
++
++.top-menu a.active {
++    color: #f75b5b;
++    font-weight: 600;
++}
++
++.top-menu .divider {
++    color: #aaa;
++    font-size: 20px;
++    user-select: none; /* чтобы не выделялась */
++}
++/* Контент */
++.catalog-content {
++    display: flex;
++    gap: 30px;
++}
++
++/* Левое меню */
++.sidebar {
++    width: 300px;
++    min-height: 100vh;
++    padding: 30px 20px;
++
++    display: flex;
++    flex-direction: column;
++    justify-content: flex-start; /* сверху */
++}
++
++.sidebar ul {
++    list-style: none;
++    margin: 0;
++    padding: 0;
++}
++
++.sidebar li {
++    margin-bottom: 25px;
++}
++
++.sidebar a {
++    text-decoration: none;
++    font-size: 18px;
++    font-weight: 500;
++    color: #444;               /* контрастный цвет, чтобы читался */
++    transition: color 0.3s;
++}
++
++.sidebar a:hover {
++    color: #f75b5b;
++}
++
++.sidebar a.active {
++    color: #f75b5b;
++    font-weight: 600;
++}
++
++.products-grid {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 80px; /* 🔥 больше расстояние */
++    margin-top: 60px;
++    margin-bottom: 100px;
++}
++
++.product-card {
++    flex: 0 0 364px;
++}
++.img-wrap {
++    width: 364px;
++    height: 403px;
++    background: #f5f5f5;
++    overflow: hidden;
++}
++
++.img-wrap img {
++    width: 100%;
++    height: 100%;
++    object-fit: cover;
++}
++
++/* блок с текстом и кнопкой */
++.product-meta {
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++    margin-top: 10px;
++}
++
++.meta-left {
++    text-align: left;
++}
++
++.meta-left .title {
++    font-size: 14px;
++    font-weight: 600;
++    text-transform: uppercase;
++    margin: 5px 0;
++}
++
++.meta-left .price {
++    font-size: 14px;
++    font-weight: bold;
++}
++
++.add-btn {
++    width: 32px;
++    height: 32px;
++    border: none;
++    border-radius: 50%;
++    background: black;
++    color: white;
++    font-size: 18px;
++    cursor: pointer;
++}
++.filters-bar {
++    display: flex;
++    justify-content: flex-end;
++    gap: 30px;
++    margin-bottom: 30px;
++}
++
++.dropdown {
++    position: relative;
++}
++
++.dropbtn {
++    background: none;
++    border: none;
++    font-size: 16px;
++    font-weight: 600;
++    cursor: pointer;
++}
++
++.dropdown-content {
++    display: none;
++    position: absolute;
++    top: 30px;
++    right: 0; /* теперь выпадает справа */
++    background: #fff;
++    padding: 15px;
++    border: 1px solid #ddd;
++    border-radius: 6px;
++    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
++    min-width: 200px;
++    z-index: 100;
++}
++
++.dropdown:hover .dropdown-content {
++    display: block;
++}
++
++.filter-block {
++    margin-bottom: 15px;
++}
++
++.filter-block label {
++    display: block;
++    font-size: 14px;
++    font-weight: 600;
++    margin-bottom: 8px;
++}
++
++.price-inputs {
++    display: flex;
++    gap: 10px;
++}
++
++.price-inputs input {
++    width: 70px;
++    padding: 5px;
++    border: 1px solid #ccc;
++    border-radius: 4px;
++}
++
++.colors {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 8px;
++}
++
++.color-box {
++    width: 20px;
++    height: 20px;
++    border: 1px solid #aaa;
++    cursor: pointer;
++    border-radius: 4px;
++}
++
++.materials button, .brands button {
++    margin-right: 8px;
++    padding: 5px 10px;
++    border: 1px solid #ccc;
++    border-radius: 4px;
++    background: #f7f7f7;
++    cursor: pointer;
++}
++
++.materials button:hover, .brands button:hover {
++    background: #e0e0e0;
++}
++
++.checkout-container {
++    display: flex;
++    justify-content: center;
++    margin: 40px 0;
++}
++
++.checkout-box {
++    border: 1px solid #ccc;
++    border-radius: 8px;
++    padding: 30px;
++    width: 420px;
++    background: white;
++    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
++}
++
++.checkout-box h2 {
++    text-align: center;
++    font-size: 18px;
++    font-weight: bold;
++    margin-bottom: 20px;
++}
++
++.form-row {
++    display: flex;
++    justify-content: space-between;
++    gap: 15px;
++    margin-bottom: 15px;
++}
++
++.form-group {
++    flex: 1;
++    display: flex;
++    flex-direction: column;
++}
++
++.checkout-box input[type="text"],
++.checkout-box input[type="date"],
++.checkout-box input[type="time"] {
++    width: 100%;
++    padding: 10px;
++    margin-bottom: 12px;
++    border: 1px solid #ccc;
++    border-radius: 4px;
++    font-size: 14px;
++}
++
++.total {
++    display: flex;
++    justify-content: space-between;
++    font-weight: bold;
++    margin: 20px 0;
++}
++
++.pay-btn {
++    width: 100%;
++    background: black;
++    color: white;
++    padding: 12px;
++    border: none;
++    border-radius: 4px;
++    font-size: 16px;
++    cursor: pointer;
++    transition: background 0.3s ease;
++}
++
++.pay-btn:hover {
++    background: #333;
++}
++
++.profile-container {
++     max-width: 400px;
++     margin: 40px auto;
++     font-family: Arial, sans-serif;
++ }
++
++.back-btn {
++    margin-bottom: 10px;
++}
++
++.back-btn a {
++    text-decoration: none;
++    font-size: 20px;
++    color: black;
++}
++
++.profile-container h2 {
++    text-align: center;
++    font-size: 18px;
++    margin-bottom: 25px;
++}
++
++.form-group {
++    display: flex;
++    flex-direction: column;
++    margin-bottom: 18px;
++}
++
++.form-group label {
++    font-size: 14px;
++    margin-bottom: 6px;
++}
++
++.form-group input {
++    padding: 10px;
++    border: 1px solid #ccc;
++    border-radius: 4px;
++    font-size: 14px;
++}
++
++.password-group {
++    position: relative;
++}
++
++.toggle-pass {
++    position: absolute;
++    right: 10px;
++    bottom: 12px;
++    cursor: pointer;
++    font-size: 14px;
++    color: #888;
++}
++
++.save-btn {
++    width: 100%;
++    padding: 12px;
++    background: black;
++    color: white;
++    border: none;
++    border-radius: 4px;
++    font-size: 15px;
++    cursor: pointer;
++}
++
++.save-btn:hover {
++    background: #333;
+ }
+\ No newline at end of file
+Index: Clothing_store/ClothingStore.db-shm
+===================================================================
+diff --git a/Clothing_store/ClothingStore.db-shm b/Clothing_store/ClothingStore.db-shm
+deleted file mode 100644
+--- a/Clothing_store/ClothingStore.db-shm	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ /dev/null	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
+@@ -1,3 +0,0 @@
+-�-                �7*0���^"Au^E���b����-                �7*0���^"Au^E���b���           ������������                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             	 
+-   
+-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+\ No newline at end of file
+Index: Clothing_store/ClothingStore.db-wal
+===================================================================
+diff --git a/Clothing_store/ClothingStore.db-wal b/Clothing_store/ClothingStore.db-wal
+deleted file mode 100644
+--- a/Clothing_store/ClothingStore.db-wal	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ /dev/null	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
+@@ -1,16 +0,0 @@
+-7� -�       "Au^E�J(%!�B$      "Au^E��nӛ�g��
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 18:28:45.3324178+00:00      "Au^E����P��
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 18:28:45.3324178+00:00      "Au^E�x=�4��U"
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:33:28.0424044+00:00      "Au^E�}c�����r
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:33:28.0424044+00:00      "Au^E���%�̆�
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:48:17.4318015+00:00      "Au^E��Ǿ�i��l
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:48:17.4318015+00:00      "Au^E���"��
+-�
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:49:00.3014164+00:00      "Au^E�%fna`^�N
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:49:00.3014164+00:00      "Au^E�e�BE���
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:54:15.0441036+00:00      "Au^E�q7���Z��
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 20:54:15.0441036+00:00      "Au^E���%�?�/
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $# M2025-09-11 20:59:03.700968+00:00      "Au^E�|~7� q�
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $# M2025-09-11 20:59:03.700968+00:00      "Au^E�qG��;c
+-   � �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 21:03:20.3924537+00:00      "Au^E�0*7�^���
+-      �                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                $ O2025-09-11 21:03:20.3924537+00:00
+\ No newline at end of file
+Index: .idea/.idea.Clothing_store/.idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"RD-252.23892.537\">\r\n    <data-source name=\"ClothingStore\" uuid=\"8e728f0f-d6b6-4962-9d12-89e57f60971a\">\r\n      <database-info product=\"\" version=\"\" jdbc-version=\"\" driver-name=\"\" driver-version=\"\" dbms=\"SQLITE\">\r\n        <identifier-quote-string>&quot;</identifier-quote-string>\r\n      </database-info>\r\n      <case-sensitivity plain-identifiers=\"mixed\" quoted-identifiers=\"mixed\" />\r\n      <auth-provider>no-auth</auth-provider>\r\n      <schema-mapping />\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Clothing_store/.idea/dataSources.local.xml b/.idea/.idea.Clothing_store/.idea/dataSources.local.xml
+--- a/.idea/.idea.Clothing_store/.idea/dataSources.local.xml	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/.idea/.idea.Clothing_store/.idea/dataSources.local.xml	(date 1757640636617)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="RD-252.23892.537">
++  <component name="dataSourceStorageLocal" created-in="RD-242.20224.431">
+     <data-source name="ClothingStore" uuid="8e728f0f-d6b6-4962-9d12-89e57f60971a">
+       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE">
+         <identifier-quote-string>&quot;</identifier-quote-string>
+Index: .idea/.idea.Clothing_store/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoGeneratedRunConfigurationManager\">\r\n    <projectFile profileName=\"http\">Clothing_store/Clothing_store.csproj</projectFile>\r\n    <projectFile profileName=\"https\">Clothing_store/Clothing_store.csproj</projectFile>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6ff257a6-b0b6-4c4d-a310-73042d8b059a\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DpaMonitoringSettings\">\r\n    <option name=\"firstShow\" value=\"false\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;TheCrazyWolf&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Thelog-outTherapy/ClothingStore.git&quot;,\r\n    &quot;accountId&quot;: &quot;3c4f93d2-2f81-4669-9808-957ce92de1a5&quot;\r\n  }\r\n}</component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d65d8dd6af5669905bd6d55baa11d05965d2c35dab0553524c64dd0c775311d/EventDefinition`.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/kusyandrik/RiderProjects/Clothing_store/Clothing_store/Components/Pages/AdminFeedbacks.razor\" root0=\"SKIP_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/kusyandrik/RiderProjects/Clothing_store/Clothing_store/Components/Pages/AdminFeedbacks.razor\" root0=\"SKIP_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminUsers.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/DataBase/ApplicationDbContext.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL.Enums/Enums/FilterParameters/ProductsSorting.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL.Enums/Enums/Material.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Basket.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Feedback.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Order.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/Product.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Models.DAL/Models/User.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"32C22M5tmNqo5KG9t2g8Qq9vbcO\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;.NET Launch Settings Profile.Clothing_store: http.executor&quot;: &quot;Debug&quot;,\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\".NET Launch Settings Profile.Clothing_store: http\">\r\n    <configuration name=\"Clothing_store: http\" type=\"LaunchSettings\" factoryName=\".NET Launch Settings Profile\">\r\n      <option name=\"LAUNCH_PROFILE_PROJECT_FILE_PATH\" value=\"$PROJECT_DIR$/Clothing_store/Clothing_store.csproj\" />\r\n      <option name=\"LAUNCH_PROFILE_TFM\" value=\"net9.0\" />\r\n      <option name=\"LAUNCH_PROFILE_NAME\" value=\"http\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <option name=\"USE_MONO\" value=\"0\" />\r\n      <option name=\"RUNTIME_ARGUMENTS\" value=\"\" />\r\n      <option name=\"GENERATE_APPLICATIONHOST_CONFIG\" value=\"1\" />\r\n      <option name=\"SHOW_IIS_EXPRESS_OUTPUT\" value=\"0\" />\r\n      <option name=\"SEND_DEBUG_REQUEST\" value=\"1\" />\r\n      <option name=\"ADDITIONAL_IIS_EXPRESS_ARGUMENTS\" value=\"\" />\r\n      <option name=\"AUTO_ATTACH_CHILDREN\" value=\"0\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Clothing_store: https\" type=\"LaunchSettings\" factoryName=\".NET Launch Settings Profile\">\r\n      <option name=\"LAUNCH_PROFILE_PROJECT_FILE_PATH\" value=\"$PROJECT_DIR$/Clothing_store/Clothing_store.csproj\" />\r\n      <option name=\"LAUNCH_PROFILE_TFM\" value=\"net9.0\" />\r\n      <option name=\"LAUNCH_PROFILE_NAME\" value=\"https\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <option name=\"USE_MONO\" value=\"0\" />\r\n      <option name=\"RUNTIME_ARGUMENTS\" value=\"\" />\r\n      <option name=\"GENERATE_APPLICATIONHOST_CONFIG\" value=\"1\" />\r\n      <option name=\"SHOW_IIS_EXPRESS_OUTPUT\" value=\"0\" />\r\n      <option name=\"SEND_DEBUG_REQUEST\" value=\"1\" />\r\n      <option name=\"ADDITIONAL_IIS_EXPRESS_ARGUMENTS\" value=\"\" />\r\n      <option name=\"AUTO_ATTACH_CHILDREN\" value=\"0\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6ff257a6-b0b6-4c4d-a310-73042d8b059a\" name=\"Changes\" comment=\"\" />\r\n      <created>1756910026559</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1756910026559</updated>\r\n      <workItem from=\"1756910028224\" duration=\"14883000\" />\r\n      <workItem from=\"1756937454969\" duration=\"1447000\" />\r\n      <workItem from=\"1756938936072\" duration=\"7818000\" />\r\n      <workItem from=\"1756976846417\" duration=\"2297000\" />\r\n      <workItem from=\"1756980934926\" duration=\"482000\" />\r\n      <workItem from=\"1757168020040\" duration=\"3378000\" />\r\n      <workItem from=\"1757450109750\" duration=\"9071000\" />\r\n      <workItem from=\"1757511161782\" duration=\"4797000\" />\r\n      <workItem from=\"1757518945925\" duration=\"855000\" />\r\n      <workItem from=\"1757519819891\" duration=\"463000\" />\r\n      <workItem from=\"1757520292274\" duration=\"1745000\" />\r\n      <workItem from=\"1757522823263\" duration=\"410000\" />\r\n      <workItem from=\"1757530856145\" duration=\"2493000\" />\r\n      <workItem from=\"1757533386317\" duration=\"7791000\" />\r\n      <workItem from=\"1757581541782\" duration=\"18130000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Созданы страницы\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757168948386</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757168948386</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Делал всё ночь,должно быть всё ништяк\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757390643745</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757390643745</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Отредактирована модель даных, начата работа на внешним видом сайта\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757581710088</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757581710088</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавлен функционал админ-панели\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757625104307</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757625104307</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"false\" />\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Созданы страницы, нужно внести в navmenu\" />\r\n    <MESSAGE value=\"Созданы страницы\" />\r\n    <MESSAGE value=\"Делал всё ночь,должно быть всё ништяк\" />\r\n    <MESSAGE value=\"Отредактирована модель даных, начата работа на внешним видом сайта\" />\r\n    <MESSAGE value=\"Добавлен функционал админ-панели\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Добавлен функционал админ-панели\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Clothing_store/.idea/workspace.xml b/.idea/.idea.Clothing_store/.idea/workspace.xml
+--- a/.idea/.idea.Clothing_store/.idea/workspace.xml	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/.idea/.idea.Clothing_store/.idea/workspace.xml	(date 1757640636609)
+@@ -8,14 +8,29 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="" />
++    <list default="true" id="6ff257a6-b0b6-4c4d-a310-73042d8b059a" name="Changes" comment="Делал всё ночь,должно быть всё ништяк">
++      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Sell.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Telegram.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Tik_tok.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/Img/Vk.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/dataSources.local.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clothing_store/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/ClothingStore.db" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-shm" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/ClothingStore.db-wal" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/Home.razor" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Clothing_store/wwwroot/app.css" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="DpaMonitoringSettings">
+-    <option name="firstShow" value="false" />
++    <option name="autoShow" value="false" />
+   </component>
+   <component name="Git.Settings">
+     <option name="PUSH_TAGS">
+@@ -35,15 +50,13 @@
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/Thelog-outTherapy/ClothingStore.git&quot;,
+-    &quot;accountId&quot;: &quot;3c4f93d2-2f81-4669-9808-957ce92de1a5&quot;
++    &quot;accountId&quot;: &quot;a1fe9405-a0f9-4d52-8d66-b76284aa1d2a&quot;
+   }
+ }</component>
+   <component name="HighlightingSettingsPerFile">
+-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4a28847852ee9ba45fd3107526c0a749a733bd4f4ebf33aa3c9a59737a3f758/EntityFrameworkServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/327f875fd92c358a2c6b3c48cc81b288070ecb997371cd17419f80a482a617/LayoutComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0b45f29f34f594814a7b1fbc25fe5ef3c18257956ed4f4fbfa68717db58/DbContext.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d65d8dd6af5669905bd6d55baa11d05965d2c35dab0553524c64dd0c775311d/EventDefinition`.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="mock://C:/Users/kusyandrik/RiderProjects/Clothing_store/Clothing_store/Components/Pages/AdminFeedbacks.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="mock://C:/Users/kusyandrik/RiderProjects/Clothing_store/Clothing_store/Components/Pages/AdminFeedbacks.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminFeedbacks.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminOrders.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/AdminProducts.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+@@ -51,12 +64,9 @@
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Basket.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Catalog.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Information.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/PrivateAccess.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Clothing_store/Components/Pages/Product.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/DataBase/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Models.DAL.Enums/Enums/FilterParameters/ProductsSorting.cs" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Models.DAL.Enums/Enums/Material.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Basket.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Feedback.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Models.DAL/Models/Order.cs" root0="FORCE_HIGHLIGHTING" />
+@@ -74,13 +84,12 @@
+   </component>
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+-    &quot;.NET Launch Settings Profile.Clothing_store: http.executor&quot;: &quot;Debug&quot;,
++    &quot;.NET Launch Settings Profile.Clothing_store: http.executor&quot;: &quot;Run&quot;,
+     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+@@ -101,7 +110,6 @@
+       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+       <option name="SEND_DEBUG_REQUEST" value="1" />
+       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+       <method v="2">
+         <option name="Build" />
+       </method>
+@@ -117,7 +125,6 @@
+       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+       <option name="SEND_DEBUG_REQUEST" value="1" />
+       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+       <method v="2">
+         <option name="Build" />
+       </method>
+@@ -137,15 +144,7 @@
+       <workItem from="1756976846417" duration="2297000" />
+       <workItem from="1756980934926" duration="482000" />
+       <workItem from="1757168020040" duration="3378000" />
+-      <workItem from="1757450109750" duration="9071000" />
+-      <workItem from="1757511161782" duration="4797000" />
+-      <workItem from="1757518945925" duration="855000" />
+-      <workItem from="1757519819891" duration="463000" />
+-      <workItem from="1757520292274" duration="1745000" />
+-      <workItem from="1757522823263" duration="410000" />
+-      <workItem from="1757530856145" duration="2493000" />
+-      <workItem from="1757533386317" duration="7791000" />
+-      <workItem from="1757581541782" duration="18130000" />
++      <workItem from="1757582586973" duration="12305000" />
+     </task>
+     <task id="LOCAL-00001" summary="Созданы страницы">
+       <option name="closed" value="true" />
+@@ -163,23 +162,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1757390643745</updated>
+     </task>
+-    <task id="LOCAL-00003" summary="Отредактирована модель даных, начата работа на внешним видом сайта">
+-      <option name="closed" value="true" />
+-      <created>1757581710088</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1757581710088</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="Добавлен функционал админ-панели">
+-      <option name="closed" value="true" />
+-      <created>1757625104307</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1757625104307</updated>
+-    </task>
+-    <option name="localTasksCounter" value="5" />
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -192,8 +175,6 @@
+     <MESSAGE value="Созданы страницы, нужно внести в navmenu" />
+     <MESSAGE value="Созданы страницы" />
+     <MESSAGE value="Делал всё ночь,должно быть всё ништяк" />
+-    <MESSAGE value="Отредактирована модель даных, начата работа на внешним видом сайта" />
+-    <MESSAGE value="Добавлен функционал админ-панели" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен функционал админ-панели" />
++    <option name="LAST_COMMIT_MESSAGE" value="Делал всё ночь,должно быть всё ништяк" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: Clothing_store/Components/Pages/Home.razor
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@page \"/\"\r\n\r\n<div class=\"homeWeb\">\r\n    <div class=\"menuWeb\">\r\n        <div class=\"shadow-def\">\r\n            <h1>Новая коллекция</h1>\r\n        </div>\r\n        <button class=\"button-radius-white\">Смотреть</button>\r\n        @*img src=\"Img/NewCollection.png\"/>*@\r\n    </div>\r\n    <div class=\"menuText\">\r\n        <h1>Категории</h1>\r\n    </div>\r\n    <div class=\"asd\">\r\n        <div class=\"background-jaket\">\r\n            <h1>Для</h1>\r\n            <h1>мужчин</h1>\r\n        </div>\r\n        <div class=\"background-women\">\r\n            <h1>Для</h1>\r\n            <h1>женщин</h1>\r\n        </div>\r\n    </div>\r\n    <div class=\"background-belt\">\r\n        <h1>АКСЕССУАРЫ</h1>\r\n    </div>\r\n    <div class=\"menuText\">\r\n        <h1>Популярный товары</h1>\r\n    </div>\r\n        <div class=\"item\">\r\n            <div class=\"background-belt2\" style=\"position: relative;\">\r\n                <div class=\"label\">хит</div>\r\n            </div>\r\n            <div class=\"product-info\">\r\n                <div>РЕМЕНЬ С ЗОЛОТОЙ ПРЯЖКОЙ</div>\r\n                <div class=\"price\">999₽</div>\r\n            </div>\r\n        </div>\r\n        <!-- Вторая карточка -->\r\n        <div class=\"item\">\r\n            <div class=\"background-bag\" style=\"position: relative;\">\r\n                <div class=\"label\">хит</div>\r\n            </div>\r\n            <div class=\"product-info\">\r\n                <div>СУМКА КЛАССИЧЕСКАЯ</div>\r\n                <div class=\"price\">1199₽</div>  \r\n            </div>\r\n        </div>\r\n        <!-- Третья карточка -->\r\n        <div class=\"item\">\r\n            <div class=\"background-top\" style=\"position: relative;\">\r\n                <div class=\"label\">хит</div>\r\n            </div>\r\n            <div class=\"product-info\">\r\n                <div>ТОП</div>\r\n                <div class=\"price\">1399₽</div>\r\n            </div>\r\n        </div>\r\n        <!-- Четвертая карточка -->\r\n        <div class=\"item\">\r\n            <div class=\"background-t-shirt\" style=\"position: relative;\">\r\n                <div class=\"label\">хит</div>\r\n            </div>\r\n            <div class=\"product-info\">\r\n                <div>ФУТБОЛКА С ПРИНТОМ</div>\r\n                <div class=\"price\">1299₽</div>\r\n            </div>\r\n        </div>\r\n    \r\n    <div class=\"endWeb\">\r\n    </div>\r\n</div>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Clothing_store/Components/Pages/Home.razor b/Clothing_store/Components/Pages/Home.razor
+--- a/Clothing_store/Components/Pages/Home.razor	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/Clothing_store/Components/Pages/Home.razor	(date 1757632792572)
+@@ -6,67 +6,74 @@
+             <h1>Новая коллекция</h1>
+         </div>
+         <button class="button-radius-white">Смотреть</button>
+-        @*img src="Img/NewCollection.png"/>*@
+     </div>
++
+     <div class="menuText">
+         <h1>Категории</h1>
+     </div>
+-    <div class="asd">
+-        <div class="background-jaket">
+-            <h1>Для</h1>
+-            <h1>мужчин</h1>
+-        </div>
+-        <div class="background-women">
+-            <h1>Для</h1>
+-            <h1>женщин</h1>
+-        </div>
+-    </div>
+-    <div class="background-belt">
+-        <h1>АКСЕССУАРЫ</h1>
++    <div class="categories">
++        <div class="row">
++            <div class="background-jaket">
++                <h1>Для мужчин</h1>
++            </div>
++            <div class="background-women">
++                <h1>Для женщин</h1>
++            </div>
++        </div>
++        <div class="row">
++            <div class="background-belt">
++                <h1>Аксессуары</h1>
++            </div>
++        </div>
+     </div>
++
+     <div class="menuText">
+-        <h1>Популярный товары</h1>
++        <h1>Популярные товары</h1>
+     </div>
++
++    <div class="products">
+         <div class="item">
+-            <div class="background-belt2" style="position: relative;">
+-                <div class="label">хит</div>
++            <div class="background-belt2">
++                <div class="label">Хит</div>
+             </div>
+             <div class="product-info">
+                 <div>РЕМЕНЬ С ЗОЛОТОЙ ПРЯЖКОЙ</div>
+                 <div class="price">999₽</div>
+             </div>
+         </div>
+-        <!-- Вторая карточка -->
++
+         <div class="item">
+-            <div class="background-bag" style="position: relative;">
+-                <div class="label">хит</div>
++            <div class="background-bag">
++                <div class="label">Хит</div>
+             </div>
+             <div class="product-info">
+                 <div>СУМКА КЛАССИЧЕСКАЯ</div>
+-                <div class="price">1199₽</div>  
++                <div class="price">1199₽</div>
+             </div>
+         </div>
+-        <!-- Третья карточка -->
++
+         <div class="item">
+-            <div class="background-top" style="position: relative;">
+-                <div class="label">хит</div>
++            <div class="background-top">
++                <div class="label">Хит</div>
+             </div>
+             <div class="product-info">
+                 <div>ТОП</div>
+                 <div class="price">1399₽</div>
+             </div>
+         </div>
+-        <!-- Четвертая карточка -->
++
+         <div class="item">
+-            <div class="background-t-shirt" style="position: relative;">
+-                <div class="label">хит</div>
++            <div class="background-t-shirt">
++                <div class="label">Хит</div>
+             </div>
+             <div class="product-info">
+                 <div>ФУТБОЛКА С ПРИНТОМ</div>
+                 <div class="price">1299₽</div>
+             </div>
+         </div>
+-    
+-    <div class="endWeb">
++    </div>
++
++    <div class="sale-banner">
++        <img src="Img/Sell.png"/>
+     </div>
+-</div>
+\ No newline at end of file
++</div>
+Index: Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@page \"/CreateOrder\"\r\n\r\n\r\n@code {\r\n    \r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor b/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor
+--- a/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/Clothing_store/Components/Pages/ModalDialog/CreateOrder.razor	(date 1757639342369)
+@@ -1,5 +1,35 @@
+ @page "/CreateOrder"
++<div class="checkout-container">
++    <div class="checkout-box">
++        <h2>Оформление заказа</h2>
++
++        <form asp-controller="Order" asp-action="Checkout" method="post">
++            <div class="form-row">
++                <div class="form-group">
++                    <label>Время</label>
++                    <input type="time" name="time" required />
++                </div>
++                <div class="form-group">
++                    <label>Дата</label>
++                    <input type="date" name="date" required />
++                </div>
++            </div>
+ 
++            <input type="text" name="country" placeholder="Страна" required />
++            <input type="text" name="city" placeholder="Город" required />
++            <input type="text" name="district" placeholder="Район" />
++            <input type="text" name="street" placeholder="Улица" required />
++            <input type="text" name="apartment" placeholder="Квартира" />
++
++            <div class="total">
++                <span>Итого</span>
++                <span class="price">799₽</span>
++            </div>
++
++            <button type="submit" class="pay-btn">Оплатить</button>
++        </form>
++    </div>
++</div>
+ 
+ @code {
+     
+Index: Clothing_store/Components/Pages/Catalog.razor
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@page \"/Catalog\"\r\n@using Clothing_store.Enums\r\n@using Clothing_store.Enums.FilterParameters\r\n@using DataBase\r\n@inject ApplicationDbContext Ef\r\n<h3>Catalog</h3>\r\n\r\n\r\n@foreach (var item in FilteringAndSorting())\r\n{\r\n    @item.ImageUrl\r\n    @item.ProductName\r\n    @item.Price\r\n}\r\n@code {\r\n    \r\n    private string ColorFilter { get; set; }\r\n    private string MaterialFilter { get; set; }\r\n    private string BrandFilter { get; set; }\r\n    private decimal? MinimalPriceFilter { get; set; }\r\n    private decimal? MaximalPriceFilter { get; set; }\r\n    private string ShowCategory { get; set; }\r\n    private string ShowType { get; set; }\r\n\r\n    private ProductsSorting sortingOrder { get; set; }\r\n    \r\n    private IQueryable<Models.DAL.Product> FilteringAndSorting()\r\n    {\r\n        IQueryable<Models.DAL.Product> products = Ef.Products;\r\n\r\n        if (!String.IsNullOrEmpty(ColorFilter))\r\n            products = products.Where(a => a.Color.ToString() == ColorFilter);\r\n\r\n        if (!String.IsNullOrEmpty(MaterialFilter))\r\n            products = products.Where(b => b.Material.ToString() == MaterialFilter);\r\n        \r\n        if (!String.IsNullOrEmpty(BrandFilter))\r\n            products = products.Where(c => c.Brand == BrandFilter);\r\n\r\n        if (MinimalPriceFilter != null)\r\n            products.Where(d => d.Price > MinimalPriceFilter);\r\n        \r\n        if (MaximalPriceFilter != null)\r\n            products.Where(h => h.Price < MinimalPriceFilter);\r\n\r\n        if (!String.IsNullOrEmpty(ShowType))\r\n            products = products.Where(i => i.ProductType == ShowType);\r\n        \r\n        if (!String.IsNullOrEmpty(ShowCategory))\r\n            products = products.Where(j => j.Category == ShowCategory);\r\n\r\n        switch (sortingOrder)\r\n        {\r\n            case ProductsSorting.PriceDesc:\r\n                products = products.OrderByDescending(e => e.Price);\r\n                break;\r\n            case ProductsSorting.PriceAsc:\r\n                products = products.OrderBy(f => f.Price);\r\n                break;\r\n            default:\r\n                products = products.OrderBy(g => g.ProductId);\r\n                break;\r\n        }\r\n\r\n        return products;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Clothing_store/Components/Pages/Catalog.razor b/Clothing_store/Components/Pages/Catalog.razor
+--- a/Clothing_store/Components/Pages/Catalog.razor	(revision 046cd7cbf5c8fd68a26a3257d138253a169efa99)
++++ b/Clothing_store/Components/Pages/Catalog.razor	(date 1757638597755)
+@@ -3,8 +3,91 @@
+ @using Clothing_store.Enums.FilterParameters
+ @using DataBase
+ @inject ApplicationDbContext Ef
+-<h3>Catalog</h3>
++<div class="catalog-page">
++
++    <!-- Верхнее меню -->
++    <div class="top-menu">
++        <div class="menu-left">
++            <a href="#" class="active">Мужчины</a>
++            <span class="divider">|</span>
++            <a href="#">Женщины</a>
++            <span class="divider">|</span>
++            <a href="#">Аксессуары</a>
++        </div>
+ 
++        <div class="menu-right"> 
++            <div class="dropdown"> <button class="dropbtn">Фильтры ▼</button> 
++                <div class="dropdown-content"> 
++                    <div class="filter-block">
++                         <label>Цена</label>
++                         <div class="price-inputs">
++                             <input type="number" placeholder="от"> <input type="number" placeholder="до">
++                         </div>
++                    </div> 
++                    <div class="filter-block">
++                         <label>Цвет</label>
++                         <div class="colors">
++                              <span class="color-box" style="background:white;"></span> <span class="color-box" style="background:black;"></span> <span class="color-box" style="background:red;"></span> <span class="color-box" style="background:green;"></span> <span class="color-box" style="background:blue;"></span> <span class="color-box" style="background:orange;"></span> <span class="color-box" style="background:pink;"></span> <span class="color-box" style="background:gray;"></span> <span class="color-box" style="background:brown;"></span>
++                         </div>
++                    </div> 
++                    <div class="filter-block">
++                         <label>Материал</label>
++                         <div class="materials">
++                             <button>Хлопок</button> 
++                             <button>Полиэстер</button>
++                         </div>
++                    </div> 
++                    <div class="filter-block">
++                         <label>Бренд</label>
++                         <div class="brands">
++                             <button>Nike</button> 
++                             <button>Adidas</button> 
++                             <button>Puma</button>
++                         </div>
++                    </div> 
++                </div> 
++            </div> 
++            <div class="dropdown"> 
++                <button class="dropbtn">Сортировка ▼</button> 
++                <div class="dropdown-content"> 
++                    <label><input type="radio" name="sort"> Сначала дорогие</label>
++                    <label><input type="radio" name="sort"> Сначала дешевые</label>
++                    <label><input type="radio" name="sort"> По популярности</label>
++                    <label><input type="radio" name="sort"> По новизне</label>
++                </div> 
++            </div>
++            </div>
++    </div>
++    
++    <div class="catalog-content">
++
++        <!-- Левый сайдбар -->
++        <aside class="sidebar">
++            <ul>
++                <li><a href="#" class="active">Футболки</a></li>
++                <li><a href="#">Рубашки</a></li>
++                <li><a href="#">Джинсы</a></li>
++                <li><a href="#">Куртки</a></li>
++                <li><a href="#">Аксессуары</a></li>
++            </ul>
++        </aside>
++        <!-- Основной контент -->
++        <div class="products-grid">
++            <div class="product-card">
++                <div class="img-wrap">
++                    <img src="images/products/tshirts/Tshirt_03.jpg" alt="Футболка">
++                </div>
++                <div class="product-meta">
++                    <div class="meta-left">
++                        <p class="title">ФУТБОЛКА С ПРИНТОМ</p>
++                        <p class="price">1299₽</p>
++                    </div>
++                    <button class="add-btn">+</button>
++                </div>
++            </div>
++        </div>
++    </div>
++    </div>
+ 
+ @foreach (var item in FilteringAndSorting())
+ {

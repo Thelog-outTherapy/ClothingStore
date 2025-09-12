@@ -3,8 +3,91 @@
 @using Clothing_store.Enums.FilterParameters
 @using DataBase
 @inject ApplicationDbContext Ef
-<h3>Catalog</h3>
+<div class="catalog-page">
 
+    <!-- Верхнее меню -->
+    <div class="top-menu">
+        <div class="menu-left">
+            <a href="#" class="active">Мужчины</a>
+            <span class="divider">|</span>
+            <a href="#">Женщины</a>
+            <span class="divider">|</span>
+            <a href="#">Аксессуары</a>
+        </div>
+
+        <div class="menu-right"> 
+            <div class="dropdown"> <button class="dropbtn">Фильтры ▼</button> 
+                <div class="dropdown-content"> 
+                    <div class="filter-block">
+                         <label>Цена</label>
+                         <div class="price-inputs">
+                             <input type="number" placeholder="от"> <input type="number" placeholder="до">
+                         </div>
+                    </div> 
+                    <div class="filter-block">
+                         <label>Цвет</label>
+                         <div class="colors">
+                              <span class="color-box" style="background:white;"></span> <span class="color-box" style="background:black;"></span> <span class="color-box" style="background:red;"></span> <span class="color-box" style="background:green;"></span> <span class="color-box" style="background:blue;"></span> <span class="color-box" style="background:orange;"></span> <span class="color-box" style="background:pink;"></span> <span class="color-box" style="background:gray;"></span> <span class="color-box" style="background:brown;"></span>
+                         </div>
+                    </div> 
+                    <div class="filter-block">
+                         <label>Материал</label>
+                         <div class="materials">
+                             <button>Хлопок</button> 
+                             <button>Полиэстер</button>
+                         </div>
+                    </div> 
+                    <div class="filter-block">
+                         <label>Бренд</label>
+                         <div class="brands">
+                             <button>Nike</button> 
+                             <button>Adidas</button> 
+                             <button>Puma</button>
+                         </div>
+                    </div> 
+                </div> 
+            </div> 
+            <div class="dropdown"> 
+                <button class="dropbtn">Сортировка ▼</button> 
+                <div class="dropdown-content"> 
+                    <label><input type="radio" name="sort"> Сначала дорогие</label>
+                    <label><input type="radio" name="sort"> Сначала дешевые</label>
+                    <label><input type="radio" name="sort"> По популярности</label>
+                    <label><input type="radio" name="sort"> По новизне</label>
+                </div> 
+            </div>
+            </div>
+    </div>
+    
+    <div class="catalog-content">
+
+        <!-- Левый сайдбар -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" class="active">Футболки</a></li>
+                <li><a href="#">Рубашки</a></li>
+                <li><a href="#">Джинсы</a></li>
+                <li><a href="#">Куртки</a></li>
+                <li><a href="#">Аксессуары</a></li>
+            </ul>
+        </aside>
+        <!-- Основной контент -->
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="img-wrap">
+                    <img src="images/products/tshirts/Tshirt_03.jpg" alt="Футболка">
+                </div>
+                <div class="product-meta">
+                    <div class="meta-left">
+                        <p class="title">ФУТБОЛКА С ПРИНТОМ</p>
+                        <p class="price">1299₽</p>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 @foreach (var item in FilteringAndSorting())
 {
